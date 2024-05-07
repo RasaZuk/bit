@@ -57,6 +57,49 @@ sum3 += marks[index++];
 
 console.log(sum3);
 
+/*
+// kai rasant ++index, pradet nuo -1, tuomet pirma prideda 0 ir paima reikalinga reiksme 
+
+let sum4 = 0;
+let index1 = -1;
+sum4 += marks[++index1];
+sum4 += marks[++index1];
+sum4 += marks[++index1];
+sum4 += marks[++index1];
+sum4 += marks[++index1];
+
+*/
+console.clear();
+
+function marksAverage(marks) {
+    if (marks.length === 0) {
+        return 'Vidurkis: nera pazymiu';
+    }
+
+let sum = 0;
+
+    //
+    
+  return 'Vidurkis: ' + (sum / marks.length);
+}
 
 
+const jonoPazymiai = [];
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
 
+jonoPazymiai.push(10);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(2);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(8);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(4);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
