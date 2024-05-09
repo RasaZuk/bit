@@ -4,7 +4,7 @@
 
 //1 su skaiciaus tipo reiksmemis
 
-
+/*
 const x = 3;
 console.log(x);
 const y = 9;
@@ -255,8 +255,10 @@ for (let i = -70; i <= 30; i++) {
 }
 console.log(naujas);
 
-console.log('--------');
+console.log('2 budas --------');
+
 //KITAS BUDAS
+
 function intervalSum(startas, pabaiga) {
     let answer = 0;
 
@@ -273,3 +275,80 @@ console.log(intervalSum(0, 100));
 console.log(intervalSum(574, 815));
 console.log(intervalSum(-50, 50));
 console.log(intervalSum(-70, 30));
+
+
+
+
+console.log('CIKLAI');
+
+//Ciklai 2. panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo
+
+const tekstas = ['b', 'u', 'r', 'o', 'k', 'a', 's'];
+
+
+for (let i = tekstas.length - 1; i >= 0; i--) {
+    console.log(i, tekstas[i]);
+
+}
+
+//antras dublis pabandymui
+const dublis = [2, 4, 6, 8];
+for (let i = dublis.length - 1; i >= 0; i--) {
+    console.log(i, dublis[i]);
+}
+
+
+
+//tekstas reverse - NEPAVYKO!
+
+function reverseString(text) {
+    let answer = '';
+
+    for (let i = 0; i < text.length; i++); {
+        answer += text[text.length - 1 - i];
+    }
+    return answer;
+}
+console.log(reverseString('labukas'), '>>>>', 'sakubal');
+
+galimas variantas dedant is galo i prieki
+for (let i =0; i < text.length; i++) {
+    answer = text [i] + answer;
+}
+
+galima imti indeksus is galo
+for (let i = text.length - 1; i >=0; i--) {
+    answer += text[i];
+}
+*/
+
+console.log('>>>>>>>');
+
+//Ciklas 3. skaiciai su liekanomis
+
+function numberCount(startas, finisas, zingsnis) {
+    let answer = 0;
+
+    for (let i = startas; i <= finisas; i++) {
+        //console.log(i);
+        //jeigu skaiciu dalinant is step liekana yra nulis, tai answer didiname vienetu
+        if (i % zingsnis === 0) {
+            answer++;
+        }
+
+    }
+
+    return 'Skaiciu intervale tarp ' + startas + ' ir ' + finisas + ', ' + 'besidalijanciu be liekanos is ' + zingsnis + ' yra ' + answer + ' vienetai.';
+
+}
+console.log(numberCount(0, 11, 3));
+console.log(numberCount(0, 11, 5));
+console.log(numberCount(0, 11, 7));
+
+console.log(numberCount(8, 31, 3));
+console.log(numberCount(8, 31, 5));
+console.log(numberCount(8, 31, 7));
+
+console.log(numberCount(-18, 18, 3));
+console.log(numberCount(-18, 18, 5));
+console.log(numberCount(-18, 18, 7));

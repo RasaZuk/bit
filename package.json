@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typeof": "node --watch ./js/duomenys/typeof.js",
+    "namumini": "node --watch ./js/namumini.js",
     "namudarbai": "node --watch ./js/namudarbai.js",
     "for": "node --watch ./js/ciklai/for.js",
     "array": "node --watch ./js/duomenys/array.js",

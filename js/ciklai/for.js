@@ -1,6 +1,5 @@
 /*
 For - pagrindinis ciklas (eng loop)
-
 i = skaiciuos kelinta tai iteracija
 i++ tas pats kas i= i+1, arba i+=1 arba ++i
 */
@@ -32,6 +31,8 @@ console.log('--------');
 for (let i = colors.length - 1; i >= 0; i--) {
     console.log(i, colors[i]);
 }
+
+
 
 console.log('-----');
 //ciklas eina mazejimo tvarka, o reiksmes didejimo
