@@ -117,7 +117,7 @@ console.log(marksT1[2]);
 console.log(marksT1[3]);
 console.log(marksT1[4]);
 
-console.log(marksT1[1] +' ' + marksT1[3] + ' ' + marksT1[2] + ', ' + marksT1[4] +' ' + marksT1[0]);
+console.log(marksT1[1] + ' ' + marksT1[3] + ' ' + marksT1[2] + ', ' + marksT1[4] + ' ' + marksT1[0]);
 
 let marksT2 = ['gera', 'darbai', 'reikalinga', 'namu', 'praktika'];
 console.log(marksT2);
@@ -129,7 +129,7 @@ console.log(marksT2[2]);
 console.log(marksT2[3]);
 console.log(marksT2[4]);
 
-console.log(marksT2[3] + ' ' + marksT2[1] + ' ' + marksT2[2] + ', ' + marksT2[0] +' ' + marksT2[4]);
+console.log(marksT2[3] + ' ' + marksT2[1] + ' ' + marksT2[2] + ', ' + marksT2[0] + ' ' + marksT2[4]);
 
 const marksT3 = ['geresne', 'bus', 'siltesne', 'rytoj', 'diena'];
 console.log(marksT3);
@@ -141,7 +141,7 @@ console.log(marksT3[2]);
 console.log(marksT3[3]);
 console.log(marksT3[4]);
 
-console.log(marksT3[3] +' ' + marksT3[1] + ' ' + marksT3[0] + ', ' + marksT3[2] +' ' + marksT3[4]);
+console.log(marksT3[3] + ' ' + marksT3[1] + ' ' + marksT3[0] + ', ' + marksT3[2] + ' ' + marksT3[4]);
 
 //Kintamuju palyginimas
 
@@ -149,15 +149,36 @@ const skaicius1 = 7;
 const skaicius2 = 9;
 
 if (skaicius1 > skaicius2) {
-console.log('Pomidoras');
+    console.log('Pomidoras');
 } else {
     console.log('Bandykite dar karta');  //a skaiciaus tipo kuris didesnis
 }
 
 if (skaicius1 < skaicius2) {
     console.log('Pomidoras');
-    } else {
-        console.log('Bandykite dar karta');  //b skaiciaus tipo kuris mazesnis
-    }
+} else {
+    console.log('Bandykite dar karta');  //b skaiciaus tipo kuris mazesnis
+}
 
-    
+
+
+//Number size variantas
+
+function numberSize(n) {
+    const nAsText = '' + n;
+
+    //desimtainis ir neigiamas
+    if (n % 1 !== 0 && n < 0) {
+        return nAsText.length - 2;
+    }
+    //desimtainis skaicius
+    if (n % 1 !== 0) {
+        return nAsText.length - 1;
+    }
+    //neigiamas skaicius
+    if (n < 0) {
+        return nAsText.length - 1;
+    }
+    return nAsText.length;
+}
+
