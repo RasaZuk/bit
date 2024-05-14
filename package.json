@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "method:string": "node --watch ./js/metodai/string.js",
     "numbers": "node --watch ./js/metodai/numbers.js",
     "typeof": "node --watch ./js/duomenys/typeof.js",
     "namumini": "node --watch ./js/namumini.js",

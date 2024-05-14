@@ -62,6 +62,40 @@ console.log(parseInt('123abc'));
 console.log(parseInt('abc123'));
 console.log(parseInt('123abc123abc'));
 console.log(parseInt('abc123abc123'));
+console.log(parseInt('125e5'));
+console.log(parseInt('1.25e5'));
 
 
+//desimtainiai, palieka po kablelio
+console.log('------------------');
+console.log('parseFloat()');
 
+console.log(parseFloat('87'));
+console.log(parseFloat('-99'));
+console.log(parseFloat('0'));
+console.log(parseFloat('3.14'));
+console.log(parseFloat('-3.14'));
+console.log(parseFloat('Nan'));
+console.log(parseFloat('Infinity'));
+console.log(parseFloat('-Infinity'));
+console.log(parseFloat('123abc'));
+console.log(parseFloat('abc123'));
+console.log(parseFloat('123abc123abc'));
+console.log(parseFloat('abc123abc123'));
+console.log(parseFloat('125e5'));
+console.log(parseFloat('1.25e5'));
+
+//sutvarko skaiciu
+//jei narsykleje nuo 0 iki 20
+//jei node.js/serveris tada nuo 0 iki 100
+//returnina stringas
+console.log('------------------');
+console.log('Number.toFixed()');
+
+const d = 5.25;
+console.log(d);
+console.log(d.toFixed(9));
+
+
+//is stringo i number
+console.log(parseFloat(d.toFixed(9)));

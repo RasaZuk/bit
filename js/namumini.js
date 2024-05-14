@@ -34,6 +34,13 @@ function skaitmenuKiekis(number) {
 }
 // arba return ('' + number).length;
 
+/* kitas variantas
+function numberSize(n) {
+    const nAsText = '' + n;
+    return nAsText.length;
+}
+*/
+
 console.log(skaitmenuKiekis(5), '>>>>', '1');
 console.log(skaitmenuKiekis(781), '>>>>', '3');
 console.log(skaitmenuKiekis(37060123456), '>>>>', '11');
