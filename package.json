@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "matrix": "node --watch ./js/ND/matrix.js",
+    "clock": "node --watch ./js/ND/clock.js",
     "method:string": "node --watch ./js/metodai/string.js",
-    "numbers": "node --watch ./js/metodai/numbers.js",
+    "method:numbers": "node --watch ./js/metodai/numbers.js",
     "typeof": "node --watch ./js/duomenys/typeof.js",
     "namumini": "node --watch ./js/namumini.js",
     "namudarbai": "node --watch ./js/namudarbai.js",
