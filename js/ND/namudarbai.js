@@ -154,7 +154,7 @@ if (string1.length > string2.length) {
 }
 
 //c ar jie lygus
-if (string1.length > string2.length) {
+if (string1.length === string2.length) {
     console.log('taip');
 } else {
     console.log('Ne');
@@ -311,12 +311,12 @@ function reverseString(text) {
 }
 console.log(reverseString('labukas'), '>>>>', 'sakubal');
 
-galimas variantas dedant is galo i prieki
+//galimas variantas dedant is galo i prieki
 for (let i =0; i < text.length; i++) {
     answer = text [i] + answer;
 }
 
-galima imti indeksus is galo
+//galima imti indeksus is galo
 for (let i = text.length - 1; i >=0; i--) {
     answer += text[i];
 }

@@ -108,3 +108,80 @@ console.log('------');
 //duodant karpymui pradzia ir pabaiga
 //pradzia imtinai, pabaiga neimtinai!
 console.log('Pyragelis'.slice(2, 4));
+
+console.log('------');
+console.log('split()');
+console.log('Labas rytas, Lietuva!'.split(' '));
+
+//norint pasiekti kiekviena zodi individualiai
+const sakinys = 'Labas rytas, Lietuva!';
+const zodziai = sakinys.split(' ');
+console.log(zodziai[0]);
+console.log(zodziai[1]);
+console.log(zodziai[2]);
+
+
+const sakinys2 = 'Bananas';
+const dalys = sakinys2.split('a');
+console.log(dalys);
+
+//krastutiniai atvejai - pradzia arba galas, kerta i dvi dalis
+const sakinys3 = 'Pomidoras';
+const dalys3 = sakinys3.split('P');
+console.log(dalys3);
+
+const sakinys4 = 'aaaWaaaaaWaaWaaa';
+const dalys4 = sakinys4.split('W');
+console.log(dalys4);
+
+
+//jei nera kur kirpti, tai grazina pradini masyva
+
+
+//jei karpysim su niekuo '', grazins raides
+const sakinys5 = 'Pomidoras';
+const dalys5 = sakinys5.split('');
+console.log(dalys5);
+
+//jei tuscia teksta kerpi su neegzistuojanciom zirklem - grazina originalia israiska
+const sakinys6 = '';
+const dalys6 = sakinys6.split('dfhsh');
+console.log(dalys6);
+
+//kerpant tuscia teksta su tusciu palieka []
+
+
+console.log('------');
+console.log('.toLowerCase()');
+console.log('Pomidoras'.toLowerCase());
+
+
+console.log('------');
+console.log('.toUpperCase()');
+console.log('Pomidoras'.toUpperCase());
+
+//kad matyt kur rezultatas, salina ir is priekio ir galo
+console.log('------');
+console.log('.trim()');
+console.log('"' + 'Pomidoras'.trim() + '"');
+console.log('"' + 'Labas rytas'.trim() + '"');
+
+
+//console.log('gfdf'.trimStart());
+//console.log('gfdf'.trimEnd());
+
+
+//isvalyti nuo kableliu ir sauktuku
+
+const text7 = 'Labas rytas, Lietuva!';
+
+//const dictionary = ['Labas, 'rytas', 'Lietuva'];
+
+const dictionary = text7
+    .replace(',', '')
+    .replace('!', '')
+    .split(' ');
+console.log(dictionary);
+
+//jei daugiau nei vienas simbolis - .replaceAll('ka keiciam', (i ka keiciam'))
+
