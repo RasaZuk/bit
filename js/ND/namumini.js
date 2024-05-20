@@ -93,7 +93,7 @@ console.log(tuscias());
 //return 'Pateiktas sarasas negali buti tuscia
 
 
-*/
+
 //e, pereina visa sarasa ir atskiram kintamajam isimena max skaiciu
 
 function didziausiasSkaiciusSarase(arr) {
@@ -120,26 +120,28 @@ console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
 //console.log(didziausiasSkaiciusSarase([]));
 
 console.clear();
-
+*/
 
 //5. Funkcija isrinktiRaides
 //a, priima du kintamuosius
-function isrinktiRaides(x, y) {
-    if (typeof x !== 'string')
+function isrinktiRaides(tekstas, [y]) {
+    if (typeof x !== 'number') {
         return 'Pirmasis kintamasis yra netinkamo tipo';
-} else {
-    if (x > 0 && x < 100);
-    console.log(x);
-        else {
+    }
+    if (x >= 100) {
         return 'Pirmojo kintamojo reiksme yra netinkamo dydzio';
-        if (typeof y !== 'number')
-            return 'Antrasis kintamasis yra netinkamo tipo';
-    } else {
-        if (y > 0);
+    }
+    if (typeof y !== 'number') {
+        return 'Antrasis kintamasis yra netinkamo tipo';
+    }
+    if (y > 0) {
         console.log(y);
-        else {
-            return 'Antrasis kintamasis turi buti didesnis uz nuli';
-        }
+    } else {
+        return 'Antrasis kintamasis turi buti didesnis uz nuli';
     }
 }
-return isrinktiRaides;
+
+
+
+//i. isrinkti raides kas antra
+console.log((abcdefg).replace[2]);

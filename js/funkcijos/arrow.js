@@ -83,3 +83,6 @@ console.log(vienas());
 //galima console.log tik po const (funcijos)
 const antras = () => 'ANTRAS';
 console.log(antras());
+
+//const sum = (_, __) => _ + __;
+
