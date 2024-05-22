@@ -184,4 +184,7 @@ const dictionary = text7
 console.log(dictionary);
 
 //jei daugiau nei vienas simbolis - .replaceAll('ka keiciam', (i ka keiciam'))
-
+    .replaceAll(',', '')
+    .replaceAll('!', '')
+    .replaceAll('?', '')
+    .split(' ');

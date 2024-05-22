@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "object": "node --watch ./js/duomenys/object.js",
+    "random": "node --watch ./js/metodai/random.js",
+    "math": "node --watch ./js/metodai/math.js",
+    "warsIsspresti": "node --watch ./js/ND/warsIsspresti.js",
+    "uzdaviniai": "node --watch ./js/ND/uzdaviniai.js",
+    "konspektai": "node --watch ./js/ND/konspektai.js",
     "ternary": "node --watch ./js/palyginimas/ternary.js",
     "Codewars": "node --watch ./js/ND/Codewars.js",
     "arrow": "node --watch ./js/funkcijos/arrow.js",

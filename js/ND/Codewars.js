@@ -3,10 +3,8 @@
 /*
 https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
 */
+
 /*
-const chai = require("chai");
-const assert = chai.assert;
-chai.config.truncateThreshold = 0;
 
 describe("Basic Tests", function () {
     it("Testing for fixed tests", () => {
@@ -23,8 +21,6 @@ function powersOfTwo(n) {
     
 */
 
-
-console.clear();
 
 /*
 https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
@@ -78,7 +74,7 @@ function getPlanetName(id) {
     return name;
 }
 
-//const Test = require('@codewars/test-compat');
+
 
 //describe("Tests", () => {
 // it("test", () => {
@@ -86,22 +82,8 @@ console.log(getPlanetName(2), 'Venus');
 console.log(getPlanetName(5), 'Jupiter');
 console.log(getPlanetName(3), 'Earth');
 
-
 */
 
-/*
-https://www.codewars.com/kata/50654ddff44f800200000007/train/javascript?collection=front-end-by-rimantas-1
-
-function solution(a, b) {
-    let solution = (a.length > b.length) ? b + a + b : a + b + a;
-    return solution;
-}
-
-console.log(solution('45', '1'));
-console.log(solution('13', '200'));
-console.log(solution('Soon', 'Me'));
-console.log(solution('U', 'False'));
-*/
 
 /*
 https://www.codewars.com/kata/514a7ac1a33775cbb500001e/train/javascript
@@ -145,7 +127,7 @@ console.log(reverseWords("hello world!"), "world! hello")
 
 /*
 https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
-*/
+
 const a = 'hello';
 const b = 'world!';
 function greet(a, b) {
@@ -156,3 +138,135 @@ console.log(a + ' ' + b);
 
 //it("Correct return-value?", function () {
 // console.log(greet(), "hello world!");
+*/
+
+/*
+https://www.codewars.com/kata/514aa0dc21607ae236000017/train/javascript
+
+let name = 'Abe'
+
+const greetAbe = () => 'Hello, ' + name + '!'
+
+let name1 = 'Ben'
+
+const greetBen = () => 'Hello, ' + name1 + '!'
+
+
+console.log(greetAbe());
+console.log(greetBen());
+
+const greet = name =>
+    () => `Hello, ${name}!`;
+const greet_abe = greet(`Abe`);
+const greet_ben = greet(`Ben`);
+
+
+console.log('isreiksta per array');
+
+const arr = ['Abe', 'Ben']
+
+const greet_abe = function () {
+    return "Hello, " + arr[0] + '!';
+};
+
+const greet_ben = function () {
+    return "Hello, " + arr[1] + '!';
+};
+*/
+
+
+
+/*
+https://www.codewars.com/kata/544675c6f971f7399a000e79/train/javascript
+
+
+const stringToNumber = function (str) {
+    // put your code here
+    return null;
+}
+
+
+
+const stringToNumber = function (str) {
+    return (str, str.toLocaleString());
+}
+
+
+//const stringToNumber = 'str' => parseInt();
+
+//function stringToNumber(x) {
+//   return x.toLocaleString('');
+//}
+
+//const stringToNumber = function (str) {
+//   return x.toLocaleString('');
+//}
+
+
+console.log(stringToNumber("1234"))
+console.log(stringToNumber("605"))
+console.log(stringToNumber("1405"))
+console.log(stringToNumber("-7"), -7)
+
+*/
+
+
+
+/*
+BE MANES
+function leo(oscar){
+  if ('oscar' === 88){
+    return "Leo finally won the oscar! Leo is happy"
+  } else if ('oscar' === 86) {
+    return "Not even for Wolf of wallstreet?!"
+  } else if ('oscar'> 86 < 88) {
+    return "When will you give Leo an Oscar?"
+  } else if ('oscar'> 88) {
+    return "Leo got one already!"
+  }
+}
+else if (oscar > 86 || oscar < 88) {
+    return "When will you give Leo an Oscar?"
+
+
+    function leo(oscar) {
+ if (oscar === 88) {
+    return 'Leo finally won the oscar! Leo is happy';
+  } else if (oscar === 86) {
+    return 'Not even for Wolf of wallstreet?!';
+  } else if (oscar < 88) {
+    return 'When will you give Leo an Oscar?';
+  } else {
+    return 'Leo got one already!';
+  }
+}
+
+function leo(oscar){
+    return oscar === 88 ? "Leo finally won the oscar! Leo is happy" : oscar === 86 ? "Not even for Wolf of wallstreet?!" : oscar > 88 ? "Leo got one already!" : "When will you give Leo an Oscar?"
+}
+function leo1(oscar) {
+    if (oscar === 88) {
+        return "Leo finally won the oscar! Leo is happy";
+    } else if (oscar === 86) {
+        return "Not even for Wolf of wallstreet?!";
+    } else if (oscar > 88) {
+        return "Leo got one already!";
+    } else {
+        return "When will you give Leo an Oscar?";
+    }
+}
+
+const leo = (oscar) => {
+  return oscar === 88 ? 'Leo finally won the oscar! Leo is happy' :
+         oscar === 86 ? 'Not even for Wolf of wallstreet?!'       :
+         oscar  <  88 ? 'When will you give Leo an Oscar?'        :
+         'Leo got one already!';
+};
+
+const leo = (oscar) => {
+  return oscar === 88 ? 'Leo finally won the oscar! Leo is happy' :
+         oscar === 86 ? 'Not even for Wolf of wallstreet?!'       :
+         oscar  <  88 ? 'When will you give Leo an Oscar?'        :
+         'Leo got one already!';
+};
+*/
