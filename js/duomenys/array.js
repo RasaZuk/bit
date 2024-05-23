@@ -76,11 +76,11 @@ function marksAverage(marks) {
         return 'Vidurkis: nera pazymiu';
     }
 
-let sum = 0;
+    let sum = 0;
 
     //
-    
-  return 'Vidurkis: ' + (sum / marks.length);
+
+    return 'Vidurkis: ' + (sum / marks.length);
 }
 
 
@@ -103,3 +103,18 @@ console.log(marksAverage(jonoPazymiai));
 jonoPazymiai.push(4);
 console.log(jonoPazymiai);
 console.log(marksAverage(jonoPazymiai));
+
+console.clear();
+
+//NUMBER ARRAY REVERSE
+//einama is galo i prieki
+function reverseArrayOfNumbers(list) {
+    const rev = [];
+
+    for (let i = list.length - 1; i >= 0; i--) {
+        rev.push(list[i]);
+    }
+    return rev;
+}
+const ats = reverseArrayOfNumbers([1, 2, 3, 4, 5]);
+console.log(ats);

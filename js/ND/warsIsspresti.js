@@ -185,3 +185,108 @@ function removeExclamationMarks(s) {
 //buvo !!
 console.log(removeExclamationMarks("Hello World!!"));
 */
+
+
+/*
+https://www.codewars.com/kata/50ee6b0bdeab583673000025/train/javascript
+
+
+
+const a = 'code';
+const b = "wa.rs";
+const name = a + b;
+
+
+console.log(name);
+//console.log(name, "codewa.rs");
+
+*/
+
+/*
+https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript
+
+function areYouPlayingBanjo(name) {
+  if (name.startsWith('r')) {
+    return name + ' plays banjo';
+  } else if (name.startsWith('R')) {
+    return name + ' plays banjo';
+  } else {
+    return name + ' does not play banjo';
+  }
+  return name;
+}
+
+console.log(areYouPlayingBanjo("Adam"));
+console.log(areYouPlayingBanjo("Paul"));
+console.log(areYouPlayingBanjo("Ringo"));
+console.log(areYouPlayingBanjo("bravo"));
+console.log(areYouPlayingBanjo("rolf"));
+
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === 'r') {
+    return name + ' plays banjo';
+  } else {
+    return name + ' does not play banjo';
+  }
+}
+
+function areYouPlayingBanjo(name) {
+  // Implement me
+  if (name[0] == 'R' || name[0] == 'r')
+    return name + " plays banjo";
+  else
+    return name + " does not play banjo";
+}
+
+function areYouPlayingBanjo(name) {
+  return name[0].toLowerCase() == "r" ? name + " plays banjo" : name + " does not play banjo";
+}
+
+
+const areYouPlayingBanjo = name => name.startsWith('R') || name.startsWith('r') ? `${name} plays banjo` : `${name} does not play banjo`
+
+*/
+
+/*
+https://www.codewars.com/kata/514aa0dc21607ae236000017/train/javascript
+
+let name = 'Abe'
+
+const greetAbe = () => 'Hello, ' + name + '!'
+
+let name1 = 'Ben'
+
+const greetBen = () => 'Hello, ' + name1 + '!'
+
+
+console.log(greetAbe());
+console.log(greetBen());
+
+const greet = name =>
+    () => `Hello, ${name}!`;
+const greet_abe = greet(`Abe`);
+const greet_ben = greet(`Ben`);
+
+
+console.log('isreiksta per array');
+
+const arr = ['Abe', 'Ben']
+
+const greet_abe = function () {
+    return "Hello, " + arr[0] + '!';
+};
+
+const greet_ben = function () {
+    return "Hello, " + arr[1] + '!';
+};
+*/
+
+/*
+  https://www.codewars.com/kata/514a7ac1a33775cbb500001e/train/javascript
+
+function mystery() {
+  let results = { sanity: 'Hello' };
+  return results;
+}
+console.log(mystery(), 'Mystery has not returned to sanity');
+*/

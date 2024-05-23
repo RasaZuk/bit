@@ -3,12 +3,7 @@
 /*
 https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
 */
-
 /*
-
-describe("Basic Tests", function () {
-    it("Testing for fixed tests", () => {
-
 
 function powersOfTwo(n) {
     if 
@@ -33,11 +28,6 @@ function check(a, x) {
     return false;
 }
 
-
-
-//chai.config.truncateThreshold = 0;
-//describe("Basic tests", () => {
-//  it("Testing for fixed tests", () => {
 
 console.log(check([66, 101], 66));
 //console.log(check([101, 45, 75, 105, 99, 107], 107), true);
@@ -75,9 +65,6 @@ function getPlanetName(id) {
 }
 
 
-
-//describe("Tests", () => {
-// it("test", () => {
 console.log(getPlanetName(2), 'Venus');
 console.log(getPlanetName(5), 'Jupiter');
 console.log(getPlanetName(3), 'Earth');
@@ -85,45 +72,35 @@ console.log(getPlanetName(3), 'Earth');
 */
 
 
-/*
-https://www.codewars.com/kata/514a7ac1a33775cbb500001e/train/javascript
-
-function mystery() {
-    let results = { sanity: 'Hello' };
-    return results;
-}
-console.log(mystery(), 'Mystery has not returned to sanity');
-*/
 
 /*
 https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript
+*/
+
+//let text = ["The greatest victory is that which requires no battle"];
+
+function reverseWords(str) {
+    for (let i = text.length - 1, i >= 0, i--) {
+        return '+= text[i]';
 
 
-let text = ["The greatest victory is that which requires no battle"];
+        //function reverseString(text) {
+        //   let answer = '';
+        //   for (let i = 0; i < text.length; i++) {
+        //      answer += text[text.length - 1 - i];
+        //   }
+        //   return answer;
+        //}
 
-//function reverseWords(str) {
-//  for (let i = text.length - 1, i >= 0, i--) {
-//   return '+= text[i]';
+        //console.log("reversed", reversed);
 
-
-function reverseString(text) {
-    let answer = '';
-
-    for (let i = 0; i < text.length; i++); {
-        answer += text[text.length - 1 - i];
-    }
-    return answer;
-}
-
-//console.log("reversed", reversed);
-
-console.log(reverseWords("hello world!"), "world! hello")
+        console.log(reverseWords("hello world!"));
 //console.log(reverseWords("yoda doesn't speak like this"), "this like speak doesn't yoda")
 //console.log(reverseWords("foobar"), "foobar")
 //console.log(reverseWords("kata editor"), "editor kata")
 //console.log(reverseWords("row row row your boat"), "boat your row row row")
 //console.log(reverseWords(""), "")
-*/
+
 
 /*
 https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
@@ -140,40 +117,6 @@ console.log(a + ' ' + b);
 // console.log(greet(), "hello world!");
 */
 
-/*
-https://www.codewars.com/kata/514aa0dc21607ae236000017/train/javascript
-
-let name = 'Abe'
-
-const greetAbe = () => 'Hello, ' + name + '!'
-
-let name1 = 'Ben'
-
-const greetBen = () => 'Hello, ' + name1 + '!'
-
-
-console.log(greetAbe());
-console.log(greetBen());
-
-const greet = name =>
-    () => `Hello, ${name}!`;
-const greet_abe = greet(`Abe`);
-const greet_ben = greet(`Ben`);
-
-
-console.log('isreiksta per array');
-
-const arr = ['Abe', 'Ben']
-
-const greet_abe = function () {
-    return "Hello, " + arr[0] + '!';
-};
-
-const greet_ben = function () {
-    return "Hello, " + arr[1] + '!';
-};
-*/
-
 
 
 /*
@@ -184,8 +127,6 @@ const stringToNumber = function (str) {
     // put your code here
     return null;
 }
-
-
 
 const stringToNumber = function (str) {
     return (str, str.toLocaleString());
@@ -270,3 +211,37 @@ const leo = (oscar) => {
          'Leo got one already!';
 };
 */
+
+
+
+/*
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+
+//const h = 60;
+//const m = 60;
+//const s = 1000;
+//function past(h, m, s) {
+//  time = 60 * 60 * 1000
+//  return time;
+//}
+
+
+function past(val, min, sek) {
+    const val = 60;
+    const min = 60;
+    const sek = 1000;
+    timeCount = val * min * sek;
+    return timeCount;
+}
+
+console.log(past(0, 1, 1));
+//console.log(past, (1, 1, 1));  //3661000)
+//assert.strictEqual(past(0, 0, 0), 0)
+//assert.strictEqual(past(1, 0, 1), 3601000)
+//assert.strictEqual(past(1, 0, 0), 3600000)
+//(past(0,1,1),61000)
+
+*/
+
+
+

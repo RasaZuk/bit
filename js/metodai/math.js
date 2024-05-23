@@ -138,4 +138,14 @@ console.log(Math.sqrt(-81), '9i');
 // minusiniai skaiciai saknies - menamieji skaiciai
 // i*i = -1
 
+console.clear();
 
+const powerOfTwo1 = [];
+const powerOfTwo2 = [];
+
+for (let i = 0; i < 10; i++) {
+    powerOfTwo1.push(2 ** i);   //deda i eiles gala, (i desine)
+    powerOfTwo2.unshift(2 ** i); //deda is galo i  kaire
+}
+console.log(powerOfTwo1);
+console.log(powerOfTwo2);
