@@ -188,3 +188,8 @@ console.log(dictionary);
 // .replaceAll('!', '')
 // .replaceAll('?', '')
 // .split(' ');
+
+
+let original = "Hello World";
+let reversed = original.split('').reverse().join('');
+console.log(reversed); //dlroW olleH

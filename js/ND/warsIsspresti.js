@@ -290,3 +290,176 @@ function mystery() {
 }
 console.log(mystery(), 'Mystery has not returned to sanity');
 */
+
+/*
+  https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript
+
+let array = ["The greatest victory is that which requires no battle"];
+const myArray = array.split();
+
+function reverseWords(str) {
+    return str.split(' ').reverse().join(' ');
+}
+
+const reverseWords = (str) => str.split(" ").reverse().join(" ");
+
+function reverseWords(str) {
+  return str.trim().split(' ').reverse().join(' ');
+}
+
+function reverseWords(str) {
+    let reverse = [];
+    let words = str.split(" ");
+    for (let i = words.length - 1; i >= 0; i--) {
+        reverse.push(words[i]);
+    }
+    return reverse.join(" ")
+}
+
+
+//reverseWords = s => s.split(' ').reverse().join(' ')
+
+console.log(reverseWords("hello world!"));
+console.log(reverseWords("yoda doesn't speak like this"), "this like speak doesn't yoda")
+//console.log(reverseWords("foobar()"));
+//console.log(reverseWords("kata editor"));
+//console.log(reverseWords("row row row your boat"), "boat your row row row")
+//console.log(reverseWords(""), "")
+*/
+
+/*
+https://www.codewars.com/kata/56dec885c54a926dcd001095
+
+
+function opposite(number) {
+    return (-number);
+
+}
+
+console.log(opposite(1));
+console.log(opposite(0));
+console.log(opposite(4.25));
+console.log(opposite(-12525220.3325));
+*/
+
+
+/*
+https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript
+
+
+function areaOrPerimeter(a, b) {
+    if (a !== b) {
+        result = (a + b) * 2;
+    } else {
+        result = a * a;
+    }
+    return result;
+}
+
+const areaOrPerimeter = function (l, w) {
+    return l === w ? l * w : 2 * (l + w)
+};
+
+const areaOrPerimeter = (l, w) => l === w ? l * w : 2 * (l + w);
+
+
+
+const areaOrPerimeter = function (l, w) {
+    if (w == l) {
+        return w * l;
+    }
+    else {
+        return 2 * l + 2 * w;
+    }
+};
+
+
+console.log(areaOrPerimeter(3, 3));
+console.log(areaOrPerimeter(6, 10));
+
+*/
+
+
+/*
+https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/javascript
+
+
+
+function century(year) {
+    let number = Math.ceil(year / 100);
+    return number;
+}
+console.log(century(1705));
+console.log(century(1900));
+console.log(century(1601));
+console.log(century(2000));
+console.log(century(89));
+
+
+const century = year => year % 100 === 0 ? parseInt(year / 100) : parseInt(year / 100) + 1;
+
+const century = year => Math.ceil(year / 100);
+*/
+
+
+/*
+https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript?collection=front-end-by-rimantas-1
+
+
+function getPlanetName(id) {
+  let name = id;
+  switch (name) {
+    case 1:
+      name1 = 'Mercury'
+      break;
+    case 2:
+      name2 = 'Venus'
+      break;
+    case 3:
+      name3 = 'Earth'
+      break;
+    case 4:
+      name4 = 'Mars'
+      break;
+    case 5:
+      name5 = 'Jupiter'
+      break;
+    case 6:
+      name6 = 'Saturn'
+      break;
+    case 7:
+      name7 = 'Uranus'
+      break;
+    case 8:
+      name8 = 'Neptune'
+  }
+  return name;
+}
+
+
+console.log(getPlanetName(2));
+//console.log(getPlanetName(5));
+//console.log(getPlanetName(3));
+
+
+function getPlanetName(id) {
+  return {
+    1: 'Mercury',
+    2: 'Venus',
+    3: 'Earth',
+    4: 'Mars',
+    5: 'Jupiter',
+    6: 'Saturn',
+    7: 'Uranus',
+    8: 'Neptune'
+  }[id]
+}
+
+const getPlanetName = id => ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'][id - 1];
+
+function getPlanetName(i) {
+  return (['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'])[i - 1];
+}
+
+*/
+

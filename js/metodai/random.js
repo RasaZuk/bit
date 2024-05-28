@@ -43,7 +43,9 @@ for (let i = 0; i < 10; i++) {
 
 //N.D
 //reikia atsitiktinio skaiciaus intervale nuo 23 iki 617 imtinai
-for (let i = 23; i < 617; i++) {
-    console.log(Math.floor(Math.random() * 617) + 1);
+
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+console.log(randomNumber(23, 617));

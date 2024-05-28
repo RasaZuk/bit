@@ -6,14 +6,14 @@ https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
 /*
 
 function powersOfTwo(n) {
-    if 
+    if
     return []
 }
 
         console.log(powersOfTwo(0), [1])
         console.log(powersOfTwo(1), [1, 2])
         console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
-    
+
 */
 
 
@@ -36,70 +36,6 @@ console.log(check([66, 101], 66));
 
 */
 
-/*
-https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript?collection=front-end-by-rimantas-1
-*/
-
-/*
-function getPlanetName(id) {
-    let name = id;
-    switch (id) {
-        case 1:
-            name1 = 'Mercury'
-        case 2:
-            name2 = 'Venus'
-        case 3:
-            name3 = 'Earth'
-        case 4:
-            name4 = 'Mars'
-        case 5:
-            name5 = 'Jupiter'
-        case 6:
-            name6 = 'Saturn'
-        case 7:
-            name7 = 'Uranus'
-        case 8:
-            name8 = 'Neptune'
-    }
-    return name;
-}
-
-
-console.log(getPlanetName(2), 'Venus');
-console.log(getPlanetName(5), 'Jupiter');
-console.log(getPlanetName(3), 'Earth');
-
-*/
-
-
-
-/*
-https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript
-*/
-
-//let text = ["The greatest victory is that which requires no battle"];
-
-function reverseWords(str) {
-    for (let i = text.length - 1, i >= 0, i--) {
-        return '+= text[i]';
-
-
-        //function reverseString(text) {
-        //   let answer = '';
-        //   for (let i = 0; i < text.length; i++) {
-        //      answer += text[text.length - 1 - i];
-        //   }
-        //   return answer;
-        //}
-
-        //console.log("reversed", reversed);
-
-        console.log(reverseWords("hello world!"));
-//console.log(reverseWords("yoda doesn't speak like this"), "this like speak doesn't yoda")
-//console.log(reverseWords("foobar"), "foobar")
-//console.log(reverseWords("kata editor"), "editor kata")
-//console.log(reverseWords("row row row your boat"), "boat your row row row")
-//console.log(reverseWords(""), "")
 
 
 /*
@@ -244,4 +180,113 @@ console.log(past(0, 1, 1));
 */
 
 
+/*
+https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript
 
+let n1 = i > 0;
+let n2 = i.length;
+const summation = function (n1, n2) {
+    let summation = n1++
+
+    return num++;
+}
+
+console.log(summation(1), 1);
+console.log(summation(2), 3);
+console.log(summation(8), 36);
+
+*/
+
+
+
+/*
+function testNum(a) {
+    let result;
+    if (a > 0) {
+        result = 'positive';
+    } else {
+        result = 'NOT positive';
+    }
+    return result;
+}
+
+console.log(testNum(-5));
+*/
+
+
+/*
+https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+
+function countSheeps(sheep) {
+    // TODO
+}
+
+for (let [sheep, expected] of tests) {
+    it(`${stringify(sheep)}`, function () {
+        assert.strictEqual(countSheeps(sheep), expected);
+    });
+}
+
+function stringify(sheep) {
+    return `[${sheep.map(String).join(',')}]`;
+}
+
+[....].reduce((total, x) => (x == 2 ? total + 1 : total), 0)
+
+*/
+
+/*
+https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
+
+
+function addLength(str) {
+    let words = Math.split('');
+    return words[0].length;
+
+    //let ilgis = [...words].length;
+    //return words + ilgis;
+}
+
+//function ilgis() {
+//   return ilgis.length;
+//}
+//console.log(ilgis, 'apple');
+
+//  return (str.split(" ").length) + ' '.join(" ");
+
+console.log(addLength, 'apple ban');
+//console.log(addLength, 'you will win');
+
+//const str = str.split(" ").length + ' '.join(" ");
+//return 'str' + ' ' + str.length;
+//str.length[0] + ' ', str.length[1];
+//const actual = addLength('apple ban');
+
+*/
+
+/*
+https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
+*/
+
+/*
+let bmi = weight / (heigth * heigth);
+
+function bmi() {
+    if (bmi <= 18.5) return "Underweigth";
+    if (bmi <= 25.0); return "Normal";
+    if (bmi <= 30); return "Overweight";
+    return "Obese";
+}
+
+
+
+console.loog(bmi(80, 1.80));
+
+//if bmi <= 18.5 return "Underweight"
+
+//if bmi <= 25.0 return "Normal"
+
+//if bmi <= 30.0 return "Overweight"
+
+//if bmi > 30 return "Obese"
+*/

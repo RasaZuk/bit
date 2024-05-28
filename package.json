@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for-other": "node --watch ./js/ciklai/for-other.js",
+    "switch": "node --watch ./js/palyginimas/switch.js",
+    "method:array": "node --watch ./js/metodai/array.js",
     "des": "node --watch ./js/metodai/des.js",
     "spread": "node --watch ./js/metodai/spread.js",
     "object": "node --watch ./js/duomenys/object.js",
