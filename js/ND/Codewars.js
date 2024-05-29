@@ -1,21 +1,5 @@
 //praktika
 
-/*
-https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
-*/
-/*
-
-function powersOfTwo(n) {
-    if
-    return []
-}
-
-        console.log(powersOfTwo(0), [1])
-        console.log(powersOfTwo(1), [1, 2])
-        console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
-
-*/
-
 
 /*
 https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
@@ -237,8 +221,8 @@ function stringify(sheep) {
 
 /*
 https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
-
-
+*/
+/*
 function addLength(str) {
     let words = Math.split('');
     return words[0].length;
@@ -261,32 +245,4 @@ console.log(addLength, 'apple ban');
 //return 'str' + ' ' + str.length;
 //str.length[0] + ' ', str.length[1];
 //const actual = addLength('apple ban');
-
-*/
-
-/*
-https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
-*/
-
-/*
-let bmi = weight / (heigth * heigth);
-
-function bmi() {
-    if (bmi <= 18.5) return "Underweigth";
-    if (bmi <= 25.0); return "Normal";
-    if (bmi <= 30); return "Overweight";
-    return "Obese";
-}
-
-
-
-console.loog(bmi(80, 1.80));
-
-//if bmi <= 18.5 return "Underweight"
-
-//if bmi <= 25.0 return "Normal"
-
-//if bmi <= 30.0 return "Overweight"
-
-//if bmi > 30 return "Obese"
 */

@@ -463,3 +463,155 @@ function getPlanetName(i) {
 
 */
 
+/*https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript
+
+
+function well(x) {
+    let count = 0;
+
+    for (const idea of x) {
+        if (idea === 'good')
+            count++;
+    }
+    if (count === 0) {
+        return 'Fail!';
+    } else if (count < 3) {
+        return 'Publish!';
+    } else {
+        return 'I smell a series!';
+    }
+}
+
+const well = x => {
+    const good_count = x.filter(x => x == 'good').length;
+    return good_count < 1 ? 'Fail!' :
+        good_count < 3 ? 'Publish!' : 'I smell a series!';
+}
+
+
+function well(x) {
+    const count = x.reduce((s, v) => s + (v == 'good'), 0);
+    return count ? count > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
+}
+
+const well = x => {
+    let count = x.filter(el => el == 'good').length
+    return count > 2 ? 'I smell a series!' : count > 0 ? 'Publish!' : 'Fail!';
+}
+
+const well = x => x.includes('good') ? x.filter(s => s == 'good').length < 3 ? 'Publish!' : 'I smell a series!' : 'Fail!';
+
+function well(x) {
+    let res = []
+    res = x.filter(el => el == 'good')
+    if (res.length > 2) {
+        return 'I smell a series!'
+    } else if (res.length > 0 && res.length <= 2) {
+        return 'Publish!'
+    } else if (res.length < 1) {
+        return 'Fail!'
+    }
+}
+
+function well(x) {
+    let y = x.filter(el => el == 'good').length;
+    if (y > 0 && y < 3) {
+        return 'Publish!';
+    } else if (y > 2) {
+        return 'I smell a series!';
+    } else { return 'Fail!'; }
+};
+
+const well = x => {
+    let ideas = x.filter(y => y === 'good').length
+    switch (true) {
+        case ideas == 0: return 'Fail!'; break;
+        case ideas < 3: return 'Publish!'; break;
+        case ideas > 2: return 'I smell a series!'
+    }
+
+}
+
+console.log(well(['bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+*/
+
+/*
+https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
+
+
+
+function bmi(weight, height) {
+    let bmi = weight / (height ** 2);
+    if (bmi <= 18.5) {
+        return "Underweight";
+    } else if (bmi > 18.5 && bmi <= 25.0) {
+        return "Normal";
+    } else if (bmi > 25 && bmi <= 30) {
+        return "Overweight";
+    } else {
+        return "Obese";
+    }
+}
+
+
+console.log(bmi(80, 1.80));
+console.log(bmi(70, 1.63));
+
+const bmi = (w, h, bmi = w / h / h) => bmi <= 18.5 ? "Underweight" :
+    bmi <= 25 ? "Normal" :
+        bmi <= 30 ? "Overweight" : "Obese";
+
+
+function bmi(weight, height) {
+    let bmi = weight / (height * height);
+    switch (true) {
+        case bmi <= 18.5:
+            return "Underweight";
+        case bmi <= 25.0:
+            return "Normal";
+        case bmi <= 30.0:
+            return "Overweight";
+        case bmi > 30:
+            return "Obese";
+    }
+}
+
+function bmi(weight, height) {
+    const bmi = weight / (height * height);
+    if (bmi <= 18.5) return "Underweight";
+    if (bmi <= 25) return "Normal";
+    if (bmi <= 30) return "Overweight";
+    return "Obese";
+}
+*/
+
+
+/*
+https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
+*/
+
+/*
+function powersOfTwo(n) {
+  const arr = [];
+  for (let i = 0; i <= n; i++)
+    arr.push(Math.pow(2, i))
+  return arr;
+}
+
+console.log(powersOfTwo(0));
+console.log(powersOfTwo(1));
+console.log(powersOfTwo(4));
+
+function powersOfTwo(n) {
+  let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(2 ** i);
+  }
+  return arr;
+}
+
+// map method
+const powersOfTwo = n => Array(n + 1).fill(2).map((e, i) => e ** i)
+*/
