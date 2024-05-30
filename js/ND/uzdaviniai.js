@@ -1,24 +1,4 @@
 
-/* reverse is Violetos
-https://www.codewars.com/kata/5168bb5dfe9a00b126000018
-
-
-function solution(str) {
-    let word = '';
-    for (let i = 0; i < str.length; i--) {
-        word = str[i] + word;
-    }
-    return solution;
-}
-console.log(solution, 'world');
-*/
-
-/*
-//arba
-function solution(str) {
-    return str.split('').reverse().join('');
-}
-*/
 
 /*
 ramintos su 
@@ -122,3 +102,43 @@ function reverseList(list) {
 }
 */
 
+/*
+https://www.codewars.com/kata/559d2284b5bb6799e9000047
+*/
+/*
+function addLength(str) {
+    let sum = str.split('');
+    let abs = [];
+    for (let i = 0; i < sum.length; i++) {
+        abs.push(sum[i] + ' ' + sum[i].length)
+    }
+    return abs;
+}
+
+
+function addLength(str) {
+    let sum = str.split('');
+    let result = [];
+}
+console.log(addLength());
+
+//console.log(addLength('apple ban'));
+
+//const actual = addLength('apple ban');
+//console.log(addLength, ("You need to return an array. Did you log to the console instead?");
+//console.log(actual, ["apple 5", "ban 3"]);
+//console.log(addLength('you will win'));
+
+*/
+
+/*
+https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
+*/
+
+function switchItUp(number) {
+    //Write your own Code!
+}
+
+console.log(switchItUp(1), "One");
+console.log(switchItUp(3), "Three");
+console.log(switchItUp(5), "Five");
