@@ -132,13 +132,82 @@ console.log(addLength());
 */
 
 /*
-https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
-*/
+https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
 
-function switchItUp(number) {
-    //Write your own Code!
+
+function checkAlive(health) {
+    if (health > 0 && health < 10) {
+        return 'true';
+    } else {
+        return 'false';
+    }
+
 }
 
-console.log(switchItUp(1), "One");
-console.log(switchItUp(3), "Three");
-console.log(switchItUp(5), "Five");
+console.log(checkAlive(5));
+console.log(checkAlive(0));
+console.log(checkAlive(2));
+console.log(checkAlive(-2));
+
+*/
+
+/*
+https://www.codewars.com/kata/56a4addbfd4a55694100001f/train/javascript
+
+
+
+function validateHello(greetings) {
+    let word = greetings.toLowerCase();
+    if (word === 'hello') {
+        return true;
+    } else if (word === 'ciao') {
+        return true;
+    } else if (word === 'salut') {
+        return true;
+    } else if (word === 'hallo') {
+        return true;
+    } else if (word === 'hola') {
+        return true;
+    } else if (word === 'ahoj') {
+        return true;
+    } else if (word === 'czesc') {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(validateHello('ahoj'));
+console.log(validateHello('meh'));
+
+*/
+
+/*
+https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
+
+//function getAverage(marks) {
+//    let sum = marks.reduce((total, currentValue) => total + currentValue);
+
+//   let result = sum / count;
+//    return result.toFixed(0);
+//}
+
+
+function getAverage(marks) {
+    let sum = 0;
+    let count = marks.length;
+    for (const mark of getAverage) {
+        sum += mark;
+        let result = sum / count;
+        return result.toFixed();
+    }
+}
+
+
+
+console.log(getAverage([2, 2, 2, 2]), 2);
+console.log(getAverage([1, 2, 3, 4, 5,]), 3);
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1);
+
+*/

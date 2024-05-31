@@ -11,7 +11,7 @@ console.log(word);
 console.log(word[0]);
 
 //isimti simboli, (jei nera reiksmes neduos jokio uzraso)
-console.log('.chartAt');
+console.log('.charAt');
 console.log('Labas rytas, Lietuva!'.charAt(2));
 
 console.log('---------');

@@ -629,3 +629,450 @@ console.log(solution(''));
 console.log(solution('h'));
 
 */
+
+/*
+https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
+
+
+function switchItUp(number) {
+    switch (number) {
+        case 1:
+            return 'One';
+            break;
+        case 2:
+            return 'Two';
+            break;
+        case 3:
+            return 'Three';
+            break;
+        case 4:
+            return 'Four';
+            break;
+        case 5:
+            return 'Five';
+            break;
+        case 6:
+            return 'Six';
+            break;
+        case 7:
+            return 'Seven';
+            break;
+        case 8:
+            return 'Eight';
+            break;
+        case 9:
+            return 'Nine';
+            break;
+        case 0:
+            return 'Zero';
+            break;
+    }
+}
+
+console.log(switchItUp(1));
+console.log(switchItUp(3));
+console.log(switchItUp(5));
+
+function switchItUp(number) {
+    switch (number) {
+        case 0: return 'Zero';
+        case 1: return 'One';
+        case 2: return 'Two';
+        case 3: return 'Three';
+        case 4: return 'Four';
+        case 5: return 'Five';
+        case 6: return 'Six';
+        case 7: return 'Seven';
+        case 8: return 'Eight';
+        case 9: return 'Nine';
+    }
+}
+
+function switchItUp(n) {
+    return ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][n]
+}
+
+const switchItUp = number =>
+    [`Zero`, `One`, `Two`, `Three`, `Four`, `Five`, `Six`, `Seven`, `Eight`, `Nine`][number];
+
+*/
+
+
+/*
+https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
+
+
+function greet() {
+    return "hello world!";
+}
+
+const greet = () => "hello world!";
+
+
+
+//assert.strictEqual(greet(), "hello world!");
+console.log(greet());
+*/
+
+/*
+https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
+
+
+function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+        return number * 8;
+    }
+    else {
+        return number * 9;
+    }
+}
+
+console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(1));
+console.log(simpleMultiplication(8));
+console.log(simpleMultiplication(4));
+console.log(simpleMultiplication(5));
+
+function simpleMultiplication(n) {
+    return n * (n % 2 ? 9 : 8);
+}
+
+function simpleMultiplication(n) {
+    return n % 2 == 0 ? n * 8 : n * 9
+}
+*/
+
+/*
+https://www.codewars.com/kata/56200d610758762fb0000002/train/javascript
+
+
+function addFive(num) {
+    let total = num + 5;
+    return total;
+}
+console.log(addFive(5));
+console.log(addFive(0));
+console.log(addFive(-5));
+
+const addFive = n => n + 5;
+
+const addFive = (num) => num + 5;
+
+function addFive(num) {
+    return num += 5;
+}
+*/
+
+/*
+https://www.codewars.com/kata/55a5bfaa756cfede78000026/train/javascript
+
+
+function problem(x) {
+    if (typeof x === 'number') {
+        return ((x * 50) + 6);
+    } else {
+        return 'Error';
+    }
+}
+
+console.log(problem("hello"));
+console.log(problem(1));
+console.log(problem(5));
+console.log(problem(0));
+console.log(problem(1.2));
+console.log(problem(3));
+console.log(problem("RyanIsCool"));
+console.log(problem(-3));
+console.log(problem(""));
+console.log(problem(0.03));
+
+const problem = x => typeof x === 'string' ? 'Error' : x * 50 + 6;
+
+function problem(x) {
+    return typeof x === "number" ? x * 50 + 6 : "Error";
+}
+*/
+
+/*
+https://www.codewars.com/kata/5a023c426975981341000014/train/javascript
+
+
+function otherAngle(a, b) {
+    return (180 - (a + b));
+}
+
+console.log(otherAngle(30, 60));
+console.log(otherAngle(60, 60));
+console.log(otherAngle(43, 78));
+console.log(otherAngle(10, 20));
+
+const otherAngle = (a, b) => 180 - a - b
+
+function otherAngle(a, b) {
+    return 180 - a - b;
+}
+*/
+
+/*
+https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/javascript
+
+
+function hero(bullets, dragons) {
+    return bullets / 2 >= dragons;
+}
+
+console.log(hero(10, 5));
+console.log(hero(7, 4), false);
+console.log(hero(4, 5), false);
+console.log(hero(100, 40), true);
+console.log(hero(1500, 751), false);
+console.log(hero(0, 1), false);
+
+function hero(bullets, dragons) {
+    return bullets >= dragons * 2
+}
+
+function hero(bullets, dragons) {
+    return (bullets / 2 >= dragons) ? true : false;
+}
+
+hero = (bullets, dragons) => {
+    if (bullets / 2 >= dragons) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+*/
+
+
+/*
+https://www.codewars.com/kata/595970246c9b8fa0a8000086/train/javascript
+
+
+function capitalizeWord(word) {
+    return word.charAt(0).toUpperCase([0]) + word.slice(1);
+}
+
+console.log(capitalizeWord('word'));
+console.log(capitalizeWord('i'));
+console.log(capitalizeWord('glasswear'));
+
+const capitalizeWord = word => word[0].toUpperCase() + word.slice(1);
+
+*/
+
+/*
+https://www.codewars.com/kata/596fba44963025c878000039
+
+
+function contamination(text, char) {
+    return char.repeat(text.length);
+}
+
+
+console.log(contamination("abc", "z"))
+console.log(contamination("", "z"))
+console.log(contamination("abc", ""))
+console.log(contamination("_3ebzgh4", "&"))
+console.log(contamination("//case", " "))
+
+function contamination(text, char) {
+    return text.split("").fill(char).join("");
+}
+
+const contamination = (s, v) => s.replace(/./g, v);
+
+const contamination = (text, char) => char.repeat(text.length);
+
+*/
+
+/*
+https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript
+
+function sayHello(name) {
+    return 'Hello, ' + name;
+}
+
+console.log(sayHello('Mr. Spock'))
+console.log(sayHello('Captain Kirk'))
+console.log(sayHello('Liutenant Uhura'))
+console.log(sayHello('Dr. McCoy'))
+
+const sayHello = name => `Hello, ${name}`;
+
+function sayHello(name) {
+    return `Hello, ${name}`
+}
+
+const sayHello = n => `Hello, ${n}`;
+
+*/
+
+
+/*
+https://www.codewars.com/kata/55225023e1be1ec8bc000390/train/javascript
+
+
+
+function greet(name) {
+    if (name === "Johnny") {
+        return "Hello, my love!";
+    } else {
+        return "Hello, " + name + "!";
+    }
+}
+
+console.log(greet("Jim"));
+console.log(greet("Jane"));
+console.log(greet("Simon"));
+console.log(greet("Johnny"));
+
+
+function greet(name) {
+    if (name === "Johnny")
+        return "Hello, my love!";
+    return "Hello, " + name + "!";
+}
+
+let greet = name => `Hello, ${name == "Johnny" ? "my love" : name}!`;
+
+function greet(name) {
+    return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
+}
+
+const greet = name => `Hello, ${name === 'Johnny' ? 'my love' : name}!`;
+*/
+
+
+/*
+https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd/train/javascript
+
+
+function paperwork(n, m) {
+    if (n > 0 && m > 0) {
+        return n * m;
+    } else if (n <= 0 || m <= 0) {
+        return 0;
+    }
+
+}
+
+console.log(paperwork(5, 5));
+console.log(paperwork(5, -5));
+console.log(paperwork(-5, -5));
+console.log(paperwork(-5, 5));
+console.log(paperwork(5, 0));
+
+function paperwork(n, m) {
+    return n > 0 && m > 0 ? n * m : 0
+}
+
+const paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m
+*/
+
+/*
+https://www.codewars.com/kata/56170e844da7c6f647000063/train/javascript
+
+
+function peopleWithAgeDrink(old) {
+    if (old < 14) {
+        return 'drink toddy';
+    } else if (old >= 14 && old < 18) {
+        return 'drink coke';
+    } else if (old >= 18 && old < 21) {
+        return 'drink beer';
+    } else if (old >= 21) {
+        return 'drink whisky';
+    }
+};
+
+
+
+console.log(peopleWithAgeDrink(22));
+console.log(peopleWithAgeDrink(13));
+console.log(peopleWithAgeDrink(17));
+console.log(peopleWithAgeDrink(18));
+console.log(peopleWithAgeDrink(20));
+
+
+const peopleWithAgeDrink = (age) =>
+    age < 14 ? "drink toddy" :
+        age < 18 ? "drink coke" :
+            age < 21 ? "drink beer" : "drink whisky"
+
+
+var peopleWithAgeDrink = function (old) {
+    if (old >= 21) return 'drink whisky';
+    if (old >= 18) return 'drink beer';
+    if (old >= 14) return 'drink coke';
+    return 'drink toddy';
+};
+
+const peopleWithAgeDrink = (age) => {
+  switch (true) {
+    case (age >= 21): return 'drink whisky'
+    case (age >= 18): return 'drink beer'
+    case (age >= 14): return 'drink coke'
+    default: return 'drink toddy'
+  }
+};
+
+var drinkAbout = [
+    { ageMin: 0, ageMax: 14, drink: 'toddy' },
+    { ageMin: 14, ageMax: 18, drink: 'coke' },
+    { ageMin: 18, ageMax: 21, drink: 'beer' },
+    { ageMin: 21, ageMax: 999, drink: 'whisky' }];
+
+var peopleWithAgeDrink = function (old) {
+    return "drink " + drinkAbout.filter(a => a.ageMin <= old && a.ageMax > old)[0].drink;
+};
+
+*/
+
+/*
+https://www.codewars.com/kata/551b4501ac0447318f0009cd/train/javascript
+
+
+function booleanToString(b) {
+    return b.toString();
+}
+
+function booleanToString(b) {
+    return String(b);
+}
+
+
+function booleanToString(b) {
+    return `${b}`
+}
+console.log(booleanToString(true));
+console.log(booleanToString(false));
+
+
+function booleanToString(b) {
+    if (typeof b == 'boolean') {
+        return String(b);
+    }
+}
+*/
+
+/*
+https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript
+
+
+function checkForFactor(base, factor) {
+    return base % factor === 0;
+}
+
+
+console.log(checkForFactor(10, 2));
+console.log(checkForFactor(63, 7));;
+console.log(checkForFactor(2453, 5));
+console.log(checkForFactor(24617, 3));
+
+const checkForFactor = (base, factor) => base % factor === 0;
+
+*/
