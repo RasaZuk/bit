@@ -1076,3 +1076,90 @@ console.log(checkForFactor(24617, 3));
 const checkForFactor = (base, factor) => base % factor === 0;
 
 */
+
+/*
+https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
+
+
+function check(a, x) {
+    if check(Array.isArray([a]));
+    return true;
+} else {
+    return false;
+}
+
+
+console.log(check([66, 101], 66));
+//console.log(check([101, 45, 75, 105, 99, 107], 107), true);
+//console.log(check(['t', 'e', 's', 't'], 'e'), true);
+//console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
+
+*/
+
+/*
+https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+
+
+const countSheeps = arrayOfSheeps => arrayOfSheeps.filter(Boolean).length;
+
+
+function countSheeps(arrayOfSheep) {
+   
+    let num = 0;
+
+    for (let i = 0; i < arrayOfSheep.length; i++)
+        if (arrayOfSheep[i] == true)
+            num++;
+    return num;
+}
+
+function countSheeps(arr) {
+    return arr.filter(Boolean).length;
+}
+
+let countSheeps = x => x.filter(s => s).length;
+
+*/
+
+/*
+https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
+
+
+function getAverage(array) {
+    let total = 0;
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+        count++;
+    }
+    return Math.floor(total / count);
+}
+
+console.log(getAverage([2, 2, 2, 2]));
+console.log(getAverage([1, 2, 3, 4, 5]));
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]));
+
+function getAverage(marks) {
+    return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+}
+*/
+
+/*
+https://www.codewars.com/kata/55c28f7304e3eaebef0000da/train/javascript
+
+function createArray(number) {
+    let newArray = [];
+    for (let counter = 1; counter <= number; counter++) {
+        newArray.push(counter);
+    }
+    return newArray;
+}
+
+console.log(createArray(1));
+console.log(createArray(2));
+console.log(createArray(3));
+console.log(createArray(4));
+console.log(createArray(5));
+
+const createArray = n => Array(...Array(n)).map((v, i) => i + 1);
+*/
