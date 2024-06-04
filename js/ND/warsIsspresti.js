@@ -1163,3 +1163,96 @@ console.log(createArray(5));
 
 const createArray = n => Array(...Array(n)).map((v, i) => i + 1);
 */
+
+/*
+https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/javascript
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
+console.log(goals(0, 0, 0));
+console.log(goals(43, 10, 5));
+
+const goals = (a, b, c) => a + b + c;
+
+const goals = (...goalsArray) => goalsArray.reduce((a, b) => a + b);
+*/
+
+/*
+https://www.codewars.com/kata/54d1c59aba326343c80000e7/train/javascript
+
+const solve = (x, y) => x / y;
+
+console.log(solve(2, 1));
+console.log(solve(2, 4));
+console.log(solve(42, 0));
+console.log(solve(0, 8), 0);
+console.log(solve(4.2, 1), 4.2);
+console.log(solve(9999, 11), 909);
+
+function solve(x, y) {
+    return (y == 0) ? Infinity : (x / y);
+}
+
+solve = (a, b) => a / b
+
+function solve(x, y) {
+    if (y == 0) {
+        return Infinity
+    } else {
+        return x / y
+    }
+}
+*/
+
+
+/*
+https://www.codewars.com/kata/55c90cad4b0fe31a7200001f/train/javascript
+
+
+function buildString(...template) {
+    return `I like ${template.join(', ')}!`;
+}
+
+console.log(buildString('Cheese', 'Milk', 'Chocolate'), 'I like Cheese, Milk, Chocolate!');
+console.log(buildString('Cheese', 'Milk'), 'I like Cheese, Milk!');
+console.log(buildString('Chocolate'), 'I like Chocolate!');
+
+const buildString = (...template) => `I like ${template.join(', ')}!`;
+*/
+
+
+/*
+https://www.codewars.com/kata/57158fb92ad763bb180004e7/train/javascript
+
+function rainAmount(mm) {
+    if (mm < 40) {
+        return "You need to give your plant " + (40 - mm) + "mm of water"
+    } else {
+        return "Your plant has had more than enough water for today!"
+    }
+}
+console.log(rainAmount(100));
+console.log(rainAmount(39));
+
+function rainAmount(mm) {
+    return mm < 40 ? `You need to give your plant ${40 - mm}mm of water` : "Your plant has had more than enough water for today!"
+}
+
+function rainAmount(mm) {
+    if (mm < 40) {
+        return `You need to give your plant ${40 - mm}mm of water`;
+    } else {
+        return "Your plant has had more than enough water for today!";
+    }
+}
+
+
+const rainAmount = (mm) => {
+    return mm < 40
+        ? `You need to give your plant ${40 - mm}mm of water`
+        : 'Your plant has had more than enough water for today!'
+};
+
+*/

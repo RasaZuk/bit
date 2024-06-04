@@ -17,7 +17,7 @@
     "uzdaviniai": "node --watch ./js/ND/uzdaviniai.js",
     "konspektai": "node --watch ./js/ND/konspektai.js",
     "ternary": "node --watch ./js/palyginimas/ternary.js",
-    "Codewars": "node --watch ./js/ND/Codewars.js",
+    "codewars": "node --watch ./js/ND/Codewars.js",
     "arrow": "node --watch ./js/funkcijos/arrow.js",
     "matrix": "node --watch ./js/ND/matrix.js",
     "clock": "node --watch ./js/ND/clock.js",
