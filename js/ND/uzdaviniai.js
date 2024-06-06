@@ -182,38 +182,18 @@ console.log(validateHello('meh'));
 
 
 /*
-https://www.codewars.com/kata/571edea4b625edcb51000d8e/train/javascript
-
-let a1 = "A", a2 = "a", b1 = "B", b2 = "b", c1 = "C", c2 = "c", d1 = "D", d2 = "d", e1 = "E", e2 = "e", n1 = "N", n2 = "n"
-function Dad() {
-    //select some variable to combine "Dad"
-    return d1 + a2 + d2;
-}
-function Bee() {
-    //select some variable to combine "Bee"
-    return b1 + e2 + e2;
-}
-function banana() {
-    //select some variable to combine "banana"
-    return b2 + a2 + n2 + a2 + n2 + a2;
-}
-
-//answer some questions if you finished works above
-function answer1() {
-    //the answer should be "yes" or "no"
-    return "";
-}
-function answer2() {
-    //the answer should be "yes" or "no"
-    return "";
-}
-function answer3() {
-    //the answer should be "yes" or "no"
-    return "";
-}
-
-console.log(Dad());
-console.log(Bee());
-console.log(banana());
-
+https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
 */
+
+function howManySmaller(arr, n) {
+    let number = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.toFixed(2) < n) {
+            number += arr[i];
+        }
+        return array;
+    }
+}
+console.log(howManySmaller([1.234, 1.235, 1.228], 1.24), 2);
+console.log(howManySmaller([1.1888, 1.1868, 1.1838], 1.19), 1);
+console.log(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212), 2);

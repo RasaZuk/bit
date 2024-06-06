@@ -1324,3 +1324,224 @@ console.log(equal3());
 console.log(equal4());
 console.log(equal5());
 */
+
+/*
+https://www.codewars.com/kata/571edea4b625edcb51000d8e/train/javascript
+
+let a1 = "A", a2 = "a", b1 = "B", b2 = "b", c1 = "C", c2 = "c", d1 = "D", d2 = "d", e1 = "E", e2 = "e", n1 = "N", n2 = "n"
+function Dad() {
+    //select some variable to combine "Dad"
+    return d1 + a2 + d2;
+}
+function Bee() {
+    //select some variable to combine "Bee"
+    return b1 + e2 + e2;
+}
+function banana() {
+    //select some variable to combine "banana"
+    return b2 + a2 + n2 + a2 + n2 + a2;
+}
+
+//answer some questions if you finished works above
+function answer1() {
+    //the answer should be "yes" or "no"
+    return "";
+}
+function answer2() {
+    //the answer should be "yes" or "no"
+    return "";
+}
+function answer3() {
+    //the answer should be "yes" or "no"
+    return "";
+}
+
+console.log(Dad());
+console.log(Bee());
+console.log(banana());
+
+*/
+
+/*
+https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/train/javascript
+
+
+
+function arrayMadness(a, b) {
+    let resultOne = a.map(x => x ** 2);
+    console.log(resultOne);
+
+    let resultTwo = b.map(x => x ** 3);
+    console.log(resultTwo);
+
+    const sumOfResultOne = resultOne.reduce((acc, cur) => acc + cur, 0);
+    const sumOfResultTwo = resultTwo.reduce((acc, cur) => acc + cur, 0);
+
+    if (sumOfResultOne > sumOfResultTwo) {
+        return true;
+    } else if (sumOfResultTwo > sumOfResultOne) {
+        return false;
+    }
+}
+
+const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x ** 2, 0) > b.reduce((acc, x) => acc + x ** 3, 0)
+
+console.log(arrayMadness([4, 5, 6], [1, 2, 3]), true);
+console.log(arrayMadness([5, 6, 7], [4, 5, 6]), false);
+console.log(arrayMadness([4, 5, 6], [3, 4, 5]), false);
+console.log(arrayMadness([3, 4, 5], [2, 3, 4]), false);
+console.log(arrayMadness([2, 3, 4], [1, 2, 3]), false);
+console.log(arrayMadness([1, 2, 3], [0, 1, 2]), true);
+console.log(arrayMadness([5, 3, 2, 4, 1], [15]), false);
+console.log(arrayMadness([2, 5, 3, 4, 1], [3, 3, 3, 3, 3]), false);
+console.log(arrayMadness([1, 3, 5, 2, 4], [2, 2, 2, 2, 2, 2, 2, 1]), false);
+console.log(arrayMadness([1, 2, 3, 4, 5], [2, 2, 2, 2, 2, 2, 1, 1, 1]), true);
+console.log(arrayMadness([2, 4, 6, 8, 10, 12, 14], [1, 3, 5, 7, 9, 11, 13]), false);
+
+function arrayMadness(a, b) {
+    return a.reduce((sum, el) => sum + el ** 2, 0) >
+        b.reduce((sum, el) => sum + el ** 3, 0);
+}
+
+function arrayMadness(a, b) {
+    return a.reduce((x, y) => x + y ** 2, 0) > b.reduce((x, y) => x + y ** 3, 0) ? true : false
+}
+*/
+
+/*
+https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
+
+function positiveSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+console.log(positiveSum([1, 2, 3, 4, 5]), 15);
+console.log(positiveSum([1, -2, 3, 4, 5]), 13);
+console.log(positiveSum([]), 0);
+console.log(positiveSum([-1, -2, -3, -4, -5]), 0);
+console.log(positiveSum([-1, 2, 3, 4, -5]), 9);
+*/
+
+/*
+https://www.codewars.com/kata/5865918c6b569962950002a1
+
+
+function strCount(str, letter) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count++;
+        }
+    }
+    return count;
+}
+
+function strCount(str, letter) {
+    return str.split(letter).length - 1
+}
+
+console.log(strCount('Hello', 'o'), 1);
+console.log(strCount('Hello', 'l'), 2);
+console.log(strCount('', 'z'), 0);
+
+function strCount(str, letter) {
+    return str.split('').filter(c => c == letter).length;
+}
+
+const strCount = (str, letter) =>
+    --str.split(letter).length;
+
+*/
+
+/*
+https://www.codewars.com/kata/568dc014440f03b13900001d
+
+function getDrinkByProfession(param) {
+    param = param.toLowerCase();
+    const list = {
+        "jabroni": "Patron Tequila",
+        "school counselor": "Anything with Alcohol",
+        "programmer": "Hipster Craft Beer",
+        "bike gang member": "Moonshine",
+        "politician": "Your tax dollars",
+        "rapper": "Cristal"
+    }
+    return list[param] || "Beer";
+}
+
+
+
+console.log(getDrinkByProfession("jabrOni"), 'Patron Tequila');
+console.log(getDrinkByProfession("scHOOl counselor"), 'Anything with alcohol');
+console.log(getDrinkByProfession("prOgramMer"), 'Hipster Craft Beer');
+console.log(getDrinkByProfession("bike ganG member"), 'Moonshine');
+console.log(getDrinkByProfession("poLiTiCian"), 'Your tax dollars');
+console.log(getDrinkByProfession("rapper"), 'Cristal');
+console.log(getDrinkByProfession("pundit"), 'Beer');
+console.log(getDrinkByProfession("Pug"), 'Beer');
+
+function getDrinkByProfession(param) {
+    param = param.toLowerCase();
+
+    switch (param) {
+        case "jabroni": return "Patron Tequila";
+        case "school counselor": return "Anything with Alcohol";
+        case "programmer": return "Hipster Craft Beer";
+        case "bike gang member": return "Moonshine";
+        case "politician": return "Your tax dollars";
+        case "rapper": return "Cristal";
+        default: return "Beer";
+    }
+}
+
+function getDrinkByProfession(param) {
+    switch (param.toLowerCase()) {
+        case 'jabroni':
+            return 'Patron Tequila';
+        case 'school counselor':
+            return 'Anything with Alcohol';
+        case 'programmer':
+            return 'Hipster Craft Beer';
+        case 'bike gang member':
+            return 'Moonshine';
+        case 'politician':
+            return 'Your tax dollars';
+        case 'rapper':
+            return 'Cristal';
+        default:
+            return 'Beer';
+    }
+}
+
+function getDrinkByProfession(param) {
+    switch (param.toLowerCase()) {
+        case 'jabroni':
+            return 'Patron Tequila'
+            break;
+        case 'school counselor':
+            return 'Anything with Alcohol'
+            break;
+        case 'programmer':
+            return 'Hipster Craft Beer'
+            break;
+        case 'bike gang member':
+            return 'Moonshine'
+            break;
+        case 'politician':
+            return 'Your tax dollars'
+            break;
+        case 'rapper':
+            return 'Cristal'
+            break;
+        default:
+            return 'Beer'
+    }
+
+}
+
+*/
