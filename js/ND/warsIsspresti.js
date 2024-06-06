@@ -1545,3 +1545,77 @@ function getDrinkByProfession(param) {
 }
 
 */
+
+/*
+https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+
+
+function howManySmaller(arr, n) {
+    let number = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].toFixed(2) < n) {
+            number++;
+        }
+    }
+    return number;
+}
+console.log(howManySmaller([1.234, 1.235, 1.228], 1.24), 2);
+console.log(howManySmaller([1.1888, 1.1868, 1.1838], 1.19), 1);
+console.log(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212), 2);
+
+function howManySmaller(arr,n){
+  var count = 0;
+  //map arr to convert all numbers to 2 decimal points
+  arr = arr.map(function(x){
+    return x.toFixed(2);
+  });
+  //traverse arr, add 1 to count for every element smaller than n
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < n) {
+      count++;
+    }
+  }
+  return count;
+}
+
+howManySmaller =(arr,n) => arr.map( x => x.toFixed(2) ).filter( x => x < n ).length;
+
+howManySmaller = (arr, n) => arr.filter(a => a.toFixed(2) < n).length
+*/
+
+/*
+https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+
+
+function howManySmaller(arr, n) {
+    let number = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].toFixed(2) < n) {
+            number++;
+        }
+    }
+    return number;
+}
+console.log(howManySmaller([1.234, 1.235, 1.228], 1.24), 2);
+console.log(howManySmaller([1.1888, 1.1868, 1.1838], 1.19), 1);
+console.log(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212), 2);
+
+function howManySmaller(arr,n){
+  var count = 0;
+  //map arr to convert all numbers to 2 decimal points
+  arr = arr.map(function(x){
+    return x.toFixed(2);
+  });
+  //traverse arr, add 1 to count for every element smaller than n
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < n) {
+      count++;
+    }
+  }
+  return count;
+}
+
+howManySmaller =(arr,n) => arr.map( x => x.toFixed(2) ).filter( x => x < n ).length;
+
+howManySmaller = (arr, n) => arr.filter(a => a.toFixed(2) < n).length
+*/
