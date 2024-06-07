@@ -1619,3 +1619,401 @@ howManySmaller =(arr,n) => arr.map( x => x.toFixed(2) ).filter( x => x < n ).len
 
 howManySmaller = (arr, n) => arr.filter(a => a.toFixed(2) < n).length
 */
+
+/*
+https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
+
+
+function check(a, x) {
+    return a.includes(x);
+}
+
+
+function check(a, x) {
+    for (let i = 0; i < a.length; i++) {
+
+        if (a[i] === x) { return true }
+    }
+    return false
+}
+
+
+function check(a, x) {
+    let result = false;
+    for (i = 0; i < a.length; i++) {
+        if (a[i] === x) {
+            result = true;
+        }
+    }
+    return result;
+};
+
+console.log(check([66, 101], 66), true);
+console.log(check([101, 45, 75, 105, 99, 107], 107), true);
+console.log(check(['t', 'e', 's', 't'], 'e'), true);
+console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false)
+
+const check = (a, x) => a.includes(x);
+
+*/
+
+/*
+https://www.codewars.com/kata/57ab2d6072292dbf7c000039/train/javascript
+
+
+function correctPolishLetters(string) {
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        const letter = string[i];
+        if (letter === 'ą') {
+            result += 'a';
+        } else if (letter === 'ć') {
+            result += 'c';
+        } else if (letter === 'ę') {
+            result += 'e';
+        } else if (letter === 'ł') {
+            result += 'l';
+        } else if (letter === 'ń') {
+            result += 'n';
+        } else if (letter === 'ó') {
+            result += 'o';
+        } else if (letter === 'ś') {
+            result += 's';
+        } else if (letter === 'ź') {
+            result += 'z';
+        } else if (letter === 'ż') {
+            result += 'z';
+        } else {
+            result += letter;
+        }
+    }
+    return result;
+}
+
+console.log(correctPolishLetters("Jędrzej Błądziński"));
+console.log(correctPolishLetters("Lech Wałęsa"));
+console.log(correctPolishLetters("Maria Skłodowska-Curie"));
+
+function correctPolishLetters(string) {
+    var dict = { 'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n', 'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z' };
+    return string.replace(/[ąćęłńóśźż]/g, match => dict[match]);
+}
+
+var polishLetters = {
+    "ą": "a",
+    "ć": "c",
+    "ę": "e",
+    "ł": "l",
+    "ń": "n",
+    "ó": "o",
+    "ś": "s",
+    "ź": "z",
+    "ż": "z",
+};
+
+function correctPolishLetters(string) {
+    return string.split('').map((c) => polishLetters[c] || c).join("");
+}
+
+function correctPolishLetters(string) {
+    return string
+        .replace(/ł/g, 'l')
+        .replace(/ą/g, 'a')
+        .replace(/ć/g, 'c')
+        .replace(/ę/g, 'e')
+        .replace(/ń/g, 'n')
+        .replace(/ó/g, 'o')
+        .replace(/ś/g, 's')
+        .replace(/ź/g, 'z')
+        .replace(/ż/g, 'z')
+}
+
+function correctPolishLetters(s) {
+    return s.replace(/[ąćęłńóśźż]/g, c => "acelnoszz"["ąćęłńóśźż".indexOf(c)])
+}
+
+
+function correctPolishLetters (string) {
+  var stringArr = string.split("")
+  for (var i = 0; i<stringArr.length; i++){
+    switch (stringArr[i]){
+        case "ą":
+        stringArr[i] = "a";
+        break;
+        case "ć":
+        stringArr[i] = "c";
+        break;
+        case "ę":
+        stringArr[i] = "e";
+        break;
+        case "ł":
+        stringArr[i] = "l";
+        break;
+        case "ń":
+        stringArr[i] = "n";
+        break;
+        case "ó":
+        stringArr[i] = "o";
+        break;
+        case "ś":
+        stringArr[i] = "s";
+        break;
+        case "ź":
+        stringArr[i] = "z";
+        break;
+        case "ż":
+        stringArr[i] = "z";
+        break;
+        default:
+        stringArr[i];
+    }
+  }
+  return stringArr.join("");
+}
+
+
+correctPolishLetters = s => s.replace(/./g, m => ({ ą: "a", ć: "c", ę: "e", ł: "l", ń: "n", ó: "o", ś: "s", ź: "z", ż: "z" }[m] || m))
+
+*/
+
+/*
+https://www.codewars.com/kata/5704aea738428f4d30000914/train/javascript
+
+
+function tripleTrouble(one, two, three) {
+    let newString = ' ';
+    return (one[0] + two[0] + three[0]).repeat(one.length);
+
+
+}
+    
+
+function tripleTrouble(one, two, three) {
+    let newString = '';
+    for (let i = 0; i < one.length; i++) {
+        newString += one[i];
+        newString += two[i];
+        newString += three[i];
+    }
+    return newString;
+}
+
+console.log(tripleTrouble("aaa", "bbb", "ccc"), "abcabcabc");
+console.log(tripleTrouble("aaaaaa", "bbbbbb", "cccccc"), "abcabcabcabcabcabc");
+console.log(tripleTrouble("burn", "reds", "roll"), "brrueordlnsl");
+console.log(tripleTrouble("Sea", "urn", "pms"), "Supermans");
+console.log(tripleTrouble("LLh", "euo", "xtr"), "LexLuthor");
+
+function tripleTrouble(one, two, three) {
+    var result = "";
+    for (let i = 0; i < one.length; i++) {
+        result += one.charAt(i) + two.charAt(i) + three.charAt(i);
+    }
+    return result;
+}
+
+function tripleTrouble(one, two, three) {
+    let x = ''
+    for (i = 0; i < one.length; i++) {
+        x += one[i] + two[i] + three[i]
+    }
+    return x
+}
+
+
+const tripleTrouble = (one, two, three) => one.split("").map((letter, index) => letter + two[index] + three[index]).join("");
+
+
+function tripleTrouble(one, two, three) {
+    var result = "";
+    one.split("");
+    two.split("");
+    three.split("");
+    for (i = 0; i < one.length; i++) {
+        result += one[i] + two[i] + three[i];
+    }
+    return result;
+}
+
+function tripleTrouble(one, two, three) {
+    let str = "";
+
+    for (let i = 0; i < one.length; i++) {
+        str += one[i] + two[i] + three[i];
+    }
+
+    return str;
+}
+
+*/
+
+/*
+https://www.codewars.com/kata/5861d28f124b35723e00005e/train/javascript
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => (fuelLeft * mpg >= distanceToPump) ? true : false;
+
+
+function zeroFuel(distanceToPump, mpg, fuelLeft) {
+    return (distanceToPump > mpg * fuelLeft) ? false : true;
+}
+
+console.log(zeroFuel(50, 25, 2), true);
+console.log(zeroFuel(100, 50, 1), false);
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump/mpg <= fuelLeft
+};
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => mpg * fuelLeft >= distanceToPump;
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if (mpg * fuelLeft >= distanceToPump) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+function zeroFuel(distanceToPump, mpg, fuelLeft) {
+    let capacity = fuelLeft * mpg;
+
+    return capacity >= distanceToPump;
+}
+
+*/
+
+/*
+https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
+
+
+function checkAlive(health) {
+    if (health <= 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+console.log(checkAlive(5));
+console.log(checkAlive(0));
+console.log(checkAlive(2));
+console.log(checkAlive(-2));
+
+
+function checkAlive(health) {
+    return health > 0 ? true : false;
+}
+
+
+const checkAlive = h => h > 0;
+
+function checkAlive(health) {
+    if (health > 0 && health < 11) {
+        return true;
+    } else if (health <= 0 && health > -11) {
+        return false;
+    }
+}
+
+function checkAlive(health) {
+    if (health > 0) {
+        return true;
+    } else (health <= 0); {
+        return false;
+    }
+}
+
+*/
+
+/*
+https://www.codewars.com/kata/559d2284b5bb6799e9000047
+
+
+
+function addLength(str) {
+    let newString = str.split(' ');
+    let result = [];
+    for (let i = 0; i < newString.length; i++) {
+        result.push(newString[i] + ' ' + newString[i].length)
+    }
+    return result;
+}
+
+console.log(addLength('apple ban'));
+console.log(addLength('you will win'));
+
+function addLength(str) {
+    return str.split(" ").map(s => `${s} ${s.length}`)
+}
+
+
+var addLength = s => s.split(' ').map(x => x + ' ' + x.length);
+
+
+function addLength(str) {
+    return str.split(" ").map(word => `${word} ${word.length}`)
+}
+
+
+function addLength(str) {
+    return str.split(' ').map(el => el + ' ' + el.length);
+}
+
+*/
+
+
+/*
+https://www.codewars.com/kata/5720a1cb65a504fdff0003e2/train/javascript
+
+
+function differenceInAges(ages) {
+    return [Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)];
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
+console.log(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
+
+
+function differenceInAges(ages) {
+
+    let max = Math.max(...ages),
+        min = Math.min(...ages)
+    diff = max - min
+
+    return [min, max, diff]
+}
+
+
+function differenceInAges(ages) {
+    const min = Math.min(...ages);
+    const max = Math.max(...ages);
+
+    return [min, max, max - min];
+}
+
+function differenceInAges(ages) {
+    const youngest = Math.min(...ages);
+    const oldest = Math.max(...ages);
+
+    return [youngest, oldest, oldest - youngest];
+}
+
+function differenceInAges(ages) {
+    let youngest = ages[0];
+    let oldest = ages[0];
+    for (i = 0; i < ages.length; i++) {
+        if (ages[i] > oldest) {
+            oldest = ages[i];
+        } else if (ages[i] < youngest) {
+            youngest = ages[i];
+        }
+    }
+    return [youngest, oldest, oldest - youngest];
+}
+
+const differenceInAges = a => (min = Math.min(...a), max = Math.max(...a), [min, max, max - min])
+
+
+*/

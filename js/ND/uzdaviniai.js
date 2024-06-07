@@ -1,14 +1,11 @@
 
-
 /*
-ramintos su 
 
 function reverseList(list) {
     let number = [],
     for (let i = list.length - 1; i > 0; i--) {
         number = list[i];
     }
-
     return number;
 }
 
@@ -52,7 +49,6 @@ function solution(str) {
 
 }
 
-//ramintos pabandymas
 function reverseList(list) {
     let number = 0;
     for (let i = list.length; i >= 0; i--) {
@@ -102,52 +98,7 @@ function reverseList(list) {
 }
 */
 
-/*
-https://www.codewars.com/kata/559d2284b5bb6799e9000047
-*/
-/*
-function addLength(str) {
-    let sum = str.split('');
-    let abs = [];
-    for (let i = 0; i < sum.length; i++) {
-        abs.push(sum[i] + ' ' + sum[i].length)
-    }
-    return abs;
-}
 
-
-function addLength(str) {
-    let sum = str.split('');
-    let result = [];
-}
-console.log(addLength());
-
-//console.log(addLength('apple ban'));
-
-//const actual = addLength('apple ban');
-//console.log(addLength, ("You need to return an array. Did you log to the console instead?");
-//console.log(actual, ["apple 5", "ban 3"]);
-//console.log(addLength('you will win'));
-
-*/
-
-/*
-https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
-
-
-function checkAlive(health) {
-    if (health > 0 && health < 10) {
-        return 'true';
-    } else {
-        return 'false';
-    }
-}
-
-console.log(checkAlive(5));
-console.log(checkAlive(0));
-console.log(checkAlive(2));
-console.log(checkAlive(-2));
-*/
 
 /*
 https://www.codewars.com/kata/56a4addbfd4a55694100001f/train/javascript
@@ -179,5 +130,4 @@ console.log(validateHello('ahoj'));
 console.log(validateHello('meh'));
 
 */
-
 
