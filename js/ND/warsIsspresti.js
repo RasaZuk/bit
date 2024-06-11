@@ -2017,3 +2017,125 @@ const differenceInAges = a => (min = Math.min(...a), max = Math.max(...a), [min,
 
 
 */
+
+/*
+https://www.codewars.com/kata/56a4addbfd4a55694100001f/train/javascript
+
+
+function validateHello(greetings) {
+    const dict = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc'];
+    greetings = greetings.toLowerCase();
+    for (const word of dict) {
+        if (greetings.includes(word)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(validateHello('ahoj'));
+console.log(validateHello('meh'));
+
+
+const validateHello = greetings => {
+    for (key in hellos) {
+        if (greetings.toLowerCase().includes(key)) {
+            return true
+        }
+    }
+    return false
+}
+
+function validateHello(greetings) {
+    const messages = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
+    const lowerCaseGreetings = greetings.toLowerCase();
+
+    for (let i = 0; i < messages.length; i++) {
+        if (lowerCaseGreetings.includes(messages[i])) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
+function validateHello(greetings) {
+    let lowerCase = greetings.toLowerCase()
+    let hellos = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+
+    for (let i = 0; i < hellos.length; i++) {
+        if (lowerCase.includes(hellos[i])) return true
+    }
+    return false
+}
+
+*/
+
+/*
+https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript
+
+
+const summation = function (num) {
+    let suma = 0;
+    for (let i = 1; i <= num; i++) {
+        suma += i;
+    }
+    return suma;
+}
+
+console.log(summation(1));
+console.log(summation(2));
+console.log(summation(8));
+
+const summation = n => n * (n + 1) / 2;
+
+
+function summation(num) {
+    return num * (num + 1) / 2
+}
+
+*/
+
+
+/*
+https://www.codewars.com/kata/5808e2006b65bff35500008f/train/javascript
+
+
+function position(letter) {
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    return `Position of alphabet: ${(alphabet.indexOf(letter) + 1)}`
+}
+
+console.log(position("a"), "Position of alphabet: 1");
+console.log(position("z"), "Position of alphabet: 26");
+console.log(position("e"), "Position of alphabet: 5");
+
+function position(alphabet) {
+    let letters = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    let placed = letters.indexOf(alphabet)
+    return "Position of alphabet:" + " " + placed;
+
+}
+
+const position = a => `Position of alphabet: ${"&abcdefghijklmnopqrstuvwxyz".indexOf(a)}`
+
+
+function position(l) {
+    var lett = ' abcdefghijklmnopqrstuvwxyz'
+    return 'Position of alphabet: ' + [...lett].indexOf(l);
+}
+
+function position(letter) {
+    let i = 0;
+    let abc = '0abcdefghijklmnopqrstuvwxyz';
+    while (i < abc.length) {
+        if (abc[i] == letter) {
+            return 'Position of alphabet: '.concat(i);
+        }
+        i++;
+    }
+}
+
+*/
+
