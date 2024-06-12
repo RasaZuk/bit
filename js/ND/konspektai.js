@@ -79,3 +79,69 @@ console.log(firstLetters);
 
 const firstLetters2 = dict.reduce((t, w) => t + w[0], 'Pirmos raides:');
 console.log(firstLetters2);
+
+
+//suskaiciuoti KIEK masyve yra teigiamu skaiciu
+let array = [1, 2, 5, -5, 9, -4];
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+        sum++;
+    }
+    return sum;
+}
+
+// suskaiciuoti visus TEIGIAMUS skaicius
+for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+//NEIGIAMU skaiciu kvardratu suma
+for (let i = 0; i < array.length; i++) {
+    if (array[i] < 0) {
+        sum += array[i] ** 2;
+    }
+    return sum;
+}
+
+//kiek skaiciu patenka i intervala 25-75 IMTINAI
+let range = 0;
+if (array[i] >= 25 && array[i] <= 75) {   //patikrina kiek is ju tenkina salygas
+    range++     // grazina kiek is ju atitinka salygas
+}
+
+//kiek skaiciu yra 0-iniai
+function nuliniai(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0) {
+            count++;
+        }
+        return count;
+    }
+
+    //kiek skaiciu dalinasi is 3 be liekanos
+    function liekana(array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 3 === 0) {
+                count++; //kiek skaiciu
+            }
+            return count;
+        }
+
+        //NEIGIAMU skaiciu vidurki
+        function vidurkis(array) {
+            let count = 0;
+            let sum = 0;
+            let average = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    count++;
+                    sum += array[i;]
+                }
+                return sum / count;
+            }

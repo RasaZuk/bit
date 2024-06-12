@@ -2139,3 +2139,57 @@ function position(letter) {
 
 */
 
+
+/*
+https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript
+
+
+function mergeArrays(arr1, arr2) {
+    let ats = [];
+    for (const n of arr1) {
+        if (!ats.includes(n))
+            ats.push(n);
+    }
+    for (const n of arr2) {
+        if (!ats.includes(n)) {
+            ats.push(n);
+        }
+        ats.sort((a, b) => a - b);
+    }
+    return ats;
+}
+
+console.log(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8]));
+console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
+console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+
+function mergeArrays(arr1, arr2) {
+    return Array.from(new Set(arr1.concat(arr2).sort((a, b) => (a - b))));
+}
+
+function mergeArrays(a, b) {
+    return [...new Set(a.concat(b))].sort((a, b) => a - b)
+}
+
+function mergeArrays(arr1, arr2) {
+    return arr1
+        .filter((item) => !arr2.includes(item))
+        .concat(arr2)
+        .sort((a, b) => a - b)
+}
+
+
+function mergeArrays(arr1, arr2) {
+    const arrMerged = arr1.concat(arr2).sort((a, b) => a - b);
+    const newArr = [];
+
+    for (let i = 0; i < arrMerged.length; i += 1) {
+        if (arrMerged[i] !== arrMerged[i + 1]) {
+            newArr.push(arrMerged[i]);
+        }
+    }
+    return newArr;
+}
+
+*/
