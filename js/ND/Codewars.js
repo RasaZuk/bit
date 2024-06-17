@@ -98,35 +98,6 @@ const leo = (oscar) => {
 
 
 
-/*
-https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
-
-//const h = 60;
-//const m = 60;
-//const s = 1000;
-//function past(h, m, s) {
-//  time = 60 * 60 * 1000
-//  return time;
-//}
-
-
-function past(val, min, sek) {
-    const val = 60;
-    const min = 60;
-    const sek = 1000;
-    timeCount = val * min * sek;
-    return timeCount;
-}
-
-console.log(past(0, 1, 1));
-//console.log(past, (1, 1, 1));  //3661000)
-//assert.strictEqual(past(0, 0, 0), 0)
-//assert.strictEqual(past(1, 0, 1), 3601000)
-//assert.strictEqual(past(1, 0, 0), 3600000)
-//(past(0,1,1),61000)
-
-*/
-
 
 /*
 https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript

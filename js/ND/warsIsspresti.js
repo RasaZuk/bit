@@ -2193,3 +2193,176 @@ function mergeArrays(arr1, arr2) {
 }
 
 */
+
+
+/*
+https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/javascript
+
+
+function setAlarm(employed, vacation) {
+    if (employed === true && vacation !== true) {
+        return 'Should be true.';
+    } else
+        return "Should be false";
+}
+
+setAlarm = (employed, vacation) => employed && !vacation
+
+
+console.log(setAlarm(true, true), "Should be false.");
+console.log(setAlarm(false, true), "Should be false.");
+console.log(setAlarm(true, false), "Should be true.");
+
+function setAlarm(employed, vacation) {
+    return employed && !vacation;
+}
+
+function setAlarm(employed, vacation) {
+    return (employed && !vacation) ? true : false;
+}
+
+function setAlarm(employed, vacation) {
+    return employed === true && vacation === false ? true : false
+
+}
+
+function setAlarm(employed, vacation) {
+    // if you are employed and not on vacation 
+    if (employed && !vacation) {
+        //   The function should return true if you are employed and not on vacation :  need to set an alarm
+        return true;
+    } else {
+        //   It should return false otherwise
+        return false;
+    }
+}
+
+*/
+
+
+/*
+https://www.codewars.com/kata/582cb0224e56e068d800003c/train/javascript
+
+
+function litres(time) {
+    const water = 0.5;
+    if (time >= 0)
+        return Math.floor(time * water);
+}
+
+console.log(litres(2));
+console.log(litres(1.4), 0, 'should return 0 litres');
+console.log(litres(12.3), 6, 'should return 6 litres');
+console.log(litres(0.82), 0, 'should return 0 litres');
+console.log(litres(11.8), 5, 'should return 5 litres');
+console.log(litres(1787), 893, 'should return 893 litres');
+console.log(litres(0), 0, 'should return 0 litres');
+
+function litres(time) {
+    return Math.floor(time * 0.5);
+}
+
+
+const litres = time => Math.floor(time * 0.5);
+
+function litres(time) {
+    return parseInt(time / 2);
+}
+
+function litres(time) {
+    const litres = 0.5;
+    let drink = litres * time;
+    return Math.floor(drink);
+}
+
+*/
+
+
+/*
+https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c/train/javascript
+
+function xor(a, b) {
+    if (a === b) {
+        return false;
+    } else
+        return true;
+}
+
+console.log(xor(false, false), false, "false xor false");
+console.log(xor(true, false), true, "true xor false");
+console.log(xor(false, true), true, "false xor true");
+console.log(xor(true, true), false, "true xor true");
+
+
+function xor(a, b) {
+    return a != b;
+}
+
+function xor(a, b) {
+    return (a || b) && !(a && b);
+}
+
+const xor = (a, b) => a != b;
+
+function xor(a, b) {
+    if ((a === true) && (b !== true)) {
+        return true
+    } else if ((a !== true) && (b === true)) {
+        return true
+    } else {
+        return false
+    }
+}
+
+const xor = (a, b) => !!(a ^ b)
+
+
+xor = (a, b) => { return a == b ? false : true }
+
+const xor = (a, b) => !a != !b;
+
+function xor(a, b) {
+    return a === b ? false : true
+}
+    */
+
+
+/*
+https://www.codewars.com/kata/56676e8fabd2d1ff3000000c
+
+
+function findNeedle(haystack) {
+    const i = haystack.indexOf('needle');
+    return `found the needle at possition ${i}`;
+}
+
+
+const haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
+const haystack_2 = ['283497238987234', 'a dog', 'a cat', 'some random junk', 'a piece of hay', 'needle', 'something somebody lost a while ago'];
+const haystack_3 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 5, 4, 3, 4, 5, 6, 67, 5, 5, 3, 3, 4, 2, 34, 234, 23, 4, 234, 324, 324, 'needle', 1, 2, 3, 4, 5, 5, 6, 5, 4, 32, 3, 45, 54];
+
+console.log(findNeedle(haystack_1), undefined, "Your function didn't return anything");
+console.log(findNeedle(haystack_1), 'found the needle at position 3');
+console.log(findNeedle(haystack_2), 'found the needle at position 5');
+console.log(findNeedle(haystack_3), 'found the needle at position 30');
+
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
+}
+
+const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
+
+function findNeedle(haystack) {
+    return `found the needle at position ${haystack.indexOf('needle')}`;
+}
+
+
+function findNeedle(array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === 'needle')
+            return 'found the needle at position ' + i;
+    }
+    // your code here
+}
+
+*/

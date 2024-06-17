@@ -125,3 +125,34 @@ console.log(multipleOfIndex[68, -1, 1, -7, 10, 10]);
 
 */
 
+
+/*
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+
+
+//const h = 60;
+//const m = 60;
+//const s = 1000;
+//function past(h, m, s) {
+//  time = 60 * 60 * 1000
+//  return time;
+//}
+
+
+function past(val, min, sek) {
+    const valandos = 60;
+    const minutes = 60;
+    const sekundes = 1000;
+    timeCount = valandos * minutes * sekundes;
+    return timeCount;
+}
+
+console.log(past(0, 1, 1));
+console.log(past, (1, 1, 1));  //3661000)
+console.log(past(0, 0, 0), 0);
+console.log((1, 0, 1), 3601000);
+console.log((1, 0, 0), 3600000);
+console.log(past(0, 1, 1), 61000);
+
+*/
+
