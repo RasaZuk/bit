@@ -2366,3 +2366,129 @@ function findNeedle(array) {
 }
 
 */
+
+
+
+/*
+https://www.codewars.com/kata/5bb0c58f484fcd170700063d/train/javascript
+
+
+
+function pillars(numPill, dist, width) {
+    return numPill > 1 ? (numPill - 2) * width + (numPill - 1) * (dist * 100) : 0;
+}
+
+
+
+console.log(pillars(1, 10, 10), 0);
+//number of pillars: 2, distance: 20 m and width: 25 cm"
+console.log(pillars(2, 20, 25), 2000);
+//number of pillars: 11, distance: 15 m and width: 30 cm"
+console.log(pillars(11, 15, 30), 15270);
+
+function pillars(num_pill, dist, width) {
+    if (num_pill < 2) return 0;
+    const widthAllPillars = (num_pill - 2) * width;
+    const distAll = (num_pill - 1) * (dist * 100);
+
+    return distAll + widthAllPillars;
+}
+
+function pillars(num_pill, dist, width) {
+    if (num_pill === 1) {
+        return 0;
+    } else {
+        let distance = dist * ((num_pill - 1) * 100);
+        let pillars = num_pill - 2;
+        return distance + (width * pillars);
+    }
+}
+
+pillars = (n, d, w) => n > 1 ? (n - 1) * d * 100 + (n - 2) * w : 0;
+
+// p - number of pillars.
+// d - distance between pillars.
+// w - width of each pillar.
+const pillars = (p, d, w) => p > 1 ? (p - 1) * (d * 100) + (p - 2) * w : 0;
+
+*/
+
+
+/*
+https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/javascript
+
+
+function smash(words) {
+    return words.join(' ');
+}
+
+
+console.log(smash([]), "");
+console.log(smash(["hello"]));
+console.log(smash(["hello", "world"]));
+console.log(smash(["hello", "amazing", "world"]));
+console.log(smash(["this", "is", "a", "really", "long", "sentence"]));
+
+const smash = words => words.join(' ');
+
+function smash(words) {
+    "use strict";
+    var smashed = '';
+    for (var i = 0; i < words.length; i++) {
+        smashed += words[i];
+        if (i != words.length - 1) {
+            smashed += ' ';
+        }
+    }
+    return smashed;
+};
+
+*/
+
+/*
+https://www.codewars.com/kata/57f780909f7e8e3183000078
+
+
+const grow = (arr) => {
+    let result = 1;
+    for (let i = 0; i < arr.length; i++) {
+        result *= arr[i];
+    }
+    return result;
+}
+
+
+
+console.log(grow([1, 2, 3]));
+console.log(grow([4, 1, 1, 1, 4]));
+console.log(grow([2, 2, 2, 2, 2, 2]));  
+
+const grow = x => x.reduce((a, b) => a * b);
+
+const grow = (nums) => nums.reduce((product, num) => product * num, 1);
+
+const grow = x => eval(x.join("*"))
+
+function grow(x) {
+    return x.reduce((accumulator, currentVal) => accumulator *= currentVal, 1);
+}
+
+function grow(x) { return x.reduce((a, b) => a * b) };
+
+function grow(x) {
+    let counter = x[0]
+    for (let i = 1; i < x.length; i++) {
+        counter = counter * x[i]
+    }
+    return counter
+}
+
+function grow(x) {
+
+    var sum = x.reduce(function (a, b) { return a * b; });
+
+    return sum
+
+}
+
+*/

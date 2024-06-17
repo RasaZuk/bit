@@ -181,3 +181,57 @@ console.log(addLength, 'apple ban');
 //str.length[0] + ' ', str.length[1];
 //const actual = addLength('apple ban');
 */
+
+/*
+const arr1 = [8, 9, 3, 7, 5, 13];
+const arr2 = [12, 9, 5, 18, 23];
+
+const recursiveMultiply = (arr, ind) => {
+  if (ind === arr.length - 1) {
+    return arr[ind];
+  } else {
+    return arr[ind] * recursiveMultiply(arr, ind + 1);
+  }
+};
+console.log(recursiveMultiply(arr1, 0));
+console.log(recursiveMultiply(arr2, 0));
+*/
+
+
+/*
+Iterative Method:
+In this method, we will use a simple for loop in JavaScript to iterate through the elements of the array and multiply them with each other to get the multiply result at the end. This approach is more efficient than the previous recursive approach as it takes the linear time complexity and constant extra space to solve the probelm.
+*/
+
+const arr1 = [8, 9, 3, 7, 5, 13];
+const arr2 = [12, 9, 5, 18, 23];
+
+const iterativeMultiply = (arr) => {
+  let result = 1;
+  for (let i = 0; i < arr.length; i++) {
+    result *= arr[i];
+  }
+  return result;
+};
+
+console.log(iterativeMultiply(arr1));
+console.log(iterativeMultiply(arr2));
+
+
+let arr1 = [8, 9, 3, 7, 5, 13];
+let arr2 = [12, 9, 5, 18, 23];
+
+/*
+Using the in-built methods:
+There are some in-built array methods available in JavaScript which we can use to iterate through the array elements and make changes in their values by passing a callback function inside them. We will use the map() and the reduce() in-built methods in this approach to multiply the elements of an array.
+*/
+
+let mapRes = 1;
+arr1.map((currItem) => {
+  mapRes *= currItem;
+});
+
+const reduceRes = arr2.reduce((res, currItem) => res *= currItem);
+
+console.log(mapRes);
+console.log(reduceRes);
