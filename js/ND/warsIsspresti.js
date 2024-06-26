@@ -2492,3 +2492,57 @@ function grow(x) {
 }
 
 */
+
+/*
+https://www.codewars.com/kata/57241e0f440cd279b5000829/train/javascript
+
+
+function sumMul(n, m) {
+    if (n < 1 || m < 2) {
+        return 'INVALID';
+    }
+    let sum = 0;
+    for (let i = 0; i < m; i += n) {
+        sum += i;
+    }
+    return sum;
+}
+
+
+console.log(sumMul(0, 0), "INVALID");
+console.log(sumMul(2, 9), 20);
+console.log(sumMul(4, -7), "INVALID");
+
+function sumMul(n, m) {
+    if (n >= m) return "INVALID";
+
+    var sum = 0;
+    for (var i = n; i < m; i += n) {
+        sum += i;
+    }
+    return sum;
+}
+
+function sumMul(n, m) {
+    if (n <= 0 || m <= 0) return "INVALID";
+
+    const last = Math.ceil(m / n) * n - n;
+    return (last + n) * (last / n) / 2;
+}
+
+function sumMul(n, m) {
+    let soma = 0
+    if (m <= 0) {
+        return "INVALID"
+    }
+
+    for (let i = 0; i < m; i++) {
+
+        if (i % n == 0) {
+            soma += i
+        }
+    }
+    return soma
+}
+
+*/
